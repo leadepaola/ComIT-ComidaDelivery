@@ -1,0 +1,230 @@
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\ApplicationInsights.config
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\csc.exe
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\csc.exe.config
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\csc.rsp
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\csi.exe
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\csi.rsp
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.AppContext.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.Collections.Immutable.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.IO.FileSystem.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\vbc.exe
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\vbc.exe.config
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\vbc.rsp
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\VBCSCompiler.exe
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\roslyn\VBCSCompiler.exe.config
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\ProyectoPedidos.dll.config
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\ProyectoPedidos.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\ProyectoPedidos.pdb
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Antlr3.Runtime.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\EntityFramework.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\EntityFramework.SqlServer.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.Web.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.WindowsServer.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.ApplicationInsights.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Google.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Web.Infrastructure.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Newtonsoft.Json.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Owin.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Helpers.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Mvc.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Optimization.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Razor.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.Deployment.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.Razor.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\WebGrease.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Helpers.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Mvc.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Optimization.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Razor.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.Deployment.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.Razor.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Antlr3.Runtime.pdb
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Newtonsoft.Json.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\EntityFramework.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\EntityFramework.SqlServer.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Google.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.ApplicationInsights.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.WindowsServer.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.Web.xml
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.Helpers.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.Mvc.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.Optimization.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.Razor.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.WebPages.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.WebPages.Deployment.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.WebPages.Razor.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\EntityFramework.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\EntityFramework.SqlServer.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Security.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Google.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\obj\Debug\ProyectoPedidos.csprojResolveAssemblyReference.cache
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\obj\Debug\ProyectoPedidos.dll
+c:\users\comunidadit\documents\visual studio 2017\Projects\ProyectoPedidos\ProyectoPedidos\obj\Debug\ProyectoPedidos.pdb
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\ApplicationInsights.config
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\csc.exe
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\csc.exe.config
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\csc.rsp
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\csi.exe
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\csi.rsp
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.AppContext.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\vbc.exe
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\vbc.exe.config
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\vbc.rsp
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\VBCSCompiler.exe
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\ProyectoPedidos.dll.config
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\ProyectoPedidos.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\ProyectoPedidos.pdb
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Antlr3.Runtime.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\EntityFramework.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\EntityFramework.SqlServer.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.Web.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Newtonsoft.Json.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Owin.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Helpers.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Mvc.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Optimization.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Razor.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.Razor.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\WebGrease.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Helpers.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Mvc.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Optimization.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.Razor.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\System.Web.WebPages.Razor.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Antlr3.Runtime.pdb
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Newtonsoft.Json.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\EntityFramework.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\EntityFramework.SqlServer.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\Microsoft.AI.Web.xml
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.Razor.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\EntityFramework.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\obj\Debug\ProyectoPedidos.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\obj\Debug\ProyectoPedidos.dll
+C:\Users\Juan\Desktop\ProyectoPedidos\ProyectoPedidos\obj\Debug\ProyectoPedidos.pdb
