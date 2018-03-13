@@ -53,8 +53,19 @@
 
                     var marker = new google.maps.Marker({
                         position: pos,
+                        animation: google.maps.Animation.DROP,
                         map: map
                     });
+                    marker.addListener('mouseout', toggleBounce);
+
+                    function toggleBounce() {
+                        if (marker.getAnimation() !== null) {
+                            marker.setAnimation(null);
+                        } else {
+                            marker.setAnimation(google.maps.Animation.BOUNCE);
+                        }
+                    }      
+
 
                 }, function () {
                     handleLocationError(true, infoWindow, map.getCenter());
