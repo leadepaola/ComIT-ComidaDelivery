@@ -1,15 +1,127 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-<link href="~/Content/estilos.css" rel="stylesheet" />
+    <link href="~/Content/estilos.css" rel="stylesheet" />
+
+
 </head>
 <body>
+
+
+    <!--mapa
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var uluru = { lat: -34.5979011, lng: -58.43593199999998 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+
+    </script>
+    mapa-->
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -34.5979011, lng: -58.43593199999998 },
+                zoom: 13
+            });
+            var infoWindow = new google.maps.InfoWindow({ map: map });
+
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+                   
+                    map.setCenter(pos);
+
+                    var marker = new google.maps.Marker({
+                        position: pos,
+                        animation: google.maps.Animation.DROP,
+                        map: map
+                    });
+                    marker.addListener('mouseout', toggleBounce);
+
+                    function toggleBounce() {
+                        if (marker.getAnimation() !== null) {
+                            marker.setAnimation(null);
+                        } else {
+                            marker.setAnimation(google.maps.Animation.BOUNCE);
+                        }
+                    }      
+
+
+                }, function () {
+                    handleLocationError(true, infoWindow, map.getCenter());
+                });
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+            }
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.');
+        }
+
+    </script>
+
+    <!--mapa
+
+          <div>
+              <div id="map" style="height: 500px; width: 100%; top:0px"></div>
+          </div>
+
+
+          <script>
+
+              var marker;
+
+              function initMap() {
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 13,
+                      center: { lat: -34.5979011, lng: -58.43593199999998 }
+                  });
+
+                  marker = new google.maps.Marker({
+                      map: map,
+                      draggable: true,
+                      animation: google.maps.Animation.DROP,
+                      position: { lat: -34.5979011, lng: -58.43593199999998 }
+                  });
+                  marker.addListener('click', toggleBounce);
+              }
+
+              function toggleBounce() {
+                  if (marker.getAnimation() !== null) {
+                      marker.setAnimation(null);
+                  } else {
+                      marker.setAnimation(google.maps.Animation.BOUNCE);
+                  }
+              }
+          </script>
+
+    mapa-->
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -30,16 +142,15 @@
             </div>
         </div>
     </div>
+    
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
-    </div>
 
+    </div>
+    
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
-</html>
+    </html>
