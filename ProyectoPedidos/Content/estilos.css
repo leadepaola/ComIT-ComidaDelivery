@@ -17,9 +17,26 @@ h1 {
 }
 
 .navbar-inverse {
-    background-color: #222222;
-    opacity: 0.7;
+    background-color: #922B21;
+    height: 20px;
+    width: 100%;
+    opacity: 0.9;
+    margin-left: auto;
+    margin-right: auto;
+    transition: height 0.9s;
+    top: 0;
 }
+    .navbar-inverse:hover {
+        height: 60px;
+    }
+
+
+    .navbar-inverse .navbar-nav > li > a  {
+        color: #D6DBDF;
+    }
+
+
+
 
 #scene {
     position: absolute;
@@ -41,32 +58,46 @@ html, body {
     padding: 0;
 }
 
+
+.menulateral:hover {
+    color: #D6DBDF;
+    background-color: #CD6155;
+    
+    
+}
+
 .menulateral {
     z-index: 3;
     direction: ltr;
     overflow: hidden;
     text-align: center;
     position: absolute;
-    color: rgb(0, 0, 0);
+    color: #D6DBDF;
     font-family: Roboto, Arial, sans-serif;
     user-select: none;
     font-size: 11px;
-    background-color: rgb(255, 255, 255);
+    background-color: #A93226;
     padding: 8px;
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
+    
     background-clip: padding-box;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     min-width: 22px;
     font-weight: 500;
     top: 50%;
-    left: 2%;
-    transition: left 0.7s;
+    left: 0.2%;
+    transition: left 1.1s;
+    width: 60px;
+    height: 50px;
+    line-height: 35px;
+
 }
 
-    .menulateral:hover {
-        background-color: rgb(235, 235, 235);
-    }
+
+
+
+
 
 #a:hover {
     background-color: rgb(255, 255, 255);
@@ -79,26 +110,26 @@ html, body {
 
 .left-panel-lateral {
     width: 20%;
-    height: 85%;
+    height: 90%;
     z-index: 2;
     color: rgb(0, 0, 0);
     font-family: Roboto, Arial, sans-serif;
     user-select: none;
     font-size: 11px;
-    background-color: rgb(255, 255, 255);
+    background-color: #F2F3F4;
     padding: 8px;
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
     background-clip: padding-box;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     position: absolute;
-    top: 50px;
+    top: 57px;
     left: -40%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: left 0.7s;
-    opacity: 0.8;
+    transition: left 0.9s;
+    opacity: 1.2;
 }
 
 .checkbox-lateral:checked ~ .left-panel-lateral {
@@ -133,3 +164,4 @@ html, body {
         border: solid black;
         border-width: 0 0.1rem;
     }
+
