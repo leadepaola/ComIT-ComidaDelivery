@@ -8,31 +8,21 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
     <link href="~/Content/estilos.css" rel="stylesheet" />
 
 
 </head>
 <body>
 
-
-    <!--mapa
     <div id="map"></div>
-    <script>
-        function initMap() {
-            var uluru = { lat: -34.5979011, lng: -58.43593199999998 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 13,
-                center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
 
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpRBZnrnMtwFyxGD9Ve9AUvMUQdcDg_Rw&callback=initMap">
     </script>
-    mapa-->
-    <div id="map"></div>
+
     <script>
         function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -48,7 +38,7 @@
                         lat: position.coords.latitude,
                         lng: position.coords.longitude
                     };
-                   
+
                     map.setCenter(pos);
 
                     var marker = new google.maps.Marker({
@@ -64,7 +54,7 @@
                         } else {
                             marker.setAnimation(google.maps.Animation.BOUNCE);
                         }
-                    }      
+                    }
 
 
                 }, function () {
@@ -85,42 +75,41 @@
 
     </script>
 
-    <!--mapa
-
-          <div>
-              <div id="map" style="height: 500px; width: 100%; top:0px"></div>
-          </div>
 
 
-          <script>
+    <input type="checkbox" class="checkbox-lateral" id="check">
+    <label class="menulateral" for="check">Filtros</label>
 
-              var marker;
+    <div class="left-panel-lateral">
+        <ul id="#ul">
 
-              function initMap() {
-                  var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 13,
-                      center: { lat: -34.5979011, lng: -58.43593199999998 }
-                  });
+            <a id="a" href=""><li id="li">COMIDA</li></a>
+            <form>
+                <input type="radio" name="gender" value="male" checked> Desayuno<br>
+                <input type="radio" name="gender" value="female"> Almuerzo<br>
+                <input type="radio" name="gender" value="other"> Merienda<br>
+                <input type="radio" name="gender" value="female"> Cena
+            </form>
 
-                  marker = new google.maps.Marker({
-                      map: map,
-                      draggable: true,
-                      animation: google.maps.Animation.DROP,
-                      position: { lat: -34.5979011, lng: -58.43593199999998 }
-                  });
-                  marker.addListener('click', toggleBounce);
-              }
+            <a id="a" href=""><li id="li">COMERCIO</li></a>
+            <form>
+                <input type="radio" name="gender" value="male" checked> Todos<br>
+                <input type="radio" name="gender" value="female"> Vegano <br>
+                <input type="radio" name="gender" value="other"> Celíaco
+            </form>
 
-              function toggleBounce() {
-                  if (marker.getAnimation() !== null) {
-                      marker.setAnimation(null);
-                  } else {
-                      marker.setAnimation(google.maps.Animation.BOUNCE);
-                  }
-              }
-          </script>
+            <a id="a" href=""><li id="li">PRECIO</li></a>
+            <form>
+                <input type="radio" name="gender" value="male" checked> -$200<br>
+                <input type="radio" name="gender" value="female"> hasta $600<br>
+                <input type="radio" name="gender" value="other"> +600
+            </form>
 
-    mapa-->
+        </ul>
+    </div>
+
+
+
 
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -142,15 +131,13 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container body-content">
         @RenderBody()
         <hr />
 
     </div>
-    
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+
+
 </body>
     </html>

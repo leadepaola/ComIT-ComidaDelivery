@@ -32,19 +32,104 @@ h1 {
 
 #map {
     height: 100%;
+    z-index: 0;
 }
-/* Optional: Makes the sample page fill the window. */
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-element.style {
-    height: 100%;
-    width: 100%;
+.menulateral {
+    z-index: 3;
+    direction: ltr;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-family: Roboto, Arial, sans-serif;
+    user-select: none;
+    font-size: 11px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    background-clip: padding-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    min-width: 22px;
+    font-weight: 500;
+    top: 50%;
+    left: 2%;
+    transition: left 0.7s;
+}
+
+    .menulateral:hover {
+        background-color: rgb(235, 235, 235);
+    }
+
+#a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.checkbox-lateral:checked ~ .menulateral {
+    left: 18%;
+}
+
+
+.left-panel-lateral {
+    width: 20%;
+    height: 85%;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    font-family: Roboto, Arial, sans-serif;
+    user-select: none;
+    font-size: 11px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    background-clip: padding-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     position: absolute;
     top: 50px;
-    left: 0px;
-    background-color: rgb(229, 227, 223);
+    left: -40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.7s;
+    opacity: 0.8;
 }
+
+.checkbox-lateral:checked ~ .left-panel-lateral {
+    left: 0;
+}
+
+.checkbox-lateral {
+    display: none;
+}
+
+#ul #a {
+    font-family: Roboto, Arial, sans-serif;
+    text-decoration: none;
+    user-select: none;
+    font-size: 1px;
+}
+
+#li {
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+    font-family: Roboto, Arial, sans-serif;
+    text-decoration: none;
+    user-select: none;
+    font-size: 10px;
+}
+
+    #li:hover {
+        color: black;
+        border: solid black;
+        border-width: 0 0.1rem;
+    }
