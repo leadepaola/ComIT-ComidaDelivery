@@ -6,84 +6,140 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
     <link href="~/Content/estilos.css" rel="stylesheet" />
 
 
 </head>
 <body>
+    
+    <script>
+            // If you're adding a number of markers, you may want to drop them on the map
+            // consecutively rather than all at once. This example shows how to use
+            // window.setTimeout() to space your markers' animation.
 
-    <div id="map"></div>
+            var neighborhoods = [
+                { lat: -34.590757, lng: -58.413001 },
+                { lat: -34.606903, lng: -58.425693 },
+                { lat: -34.579161, lng: -58.452015 },
+                { lat: -34.566954, lng: -58.434647 },
+                { lat: -34.599523, lng: -58.382782 },
+                { lat: -34.601839, lng: -58.592444 },
+                { lat: -34.601977, lng: -58.572721 },
+                { lat: -34.613118, lng: -58.362982 },
+                { lat: -34.589040, lng: -58.447594 },
+                { lat: -34.580127, lng: -58.424410 }
+            ];
+
+            var markers = [];
+            var map;
+
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 13,
+                    center: { lat: -34.5979011, lng: -58.43593199999998 }
+                });
+                var infoWindow = new google.maps.InfoWindow({ map: map });
+
+
+                // Try HTML5 geolocation.
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function (position) {
+                        var pos = {
+                            lat: position.coords.latitude,
+                            lng: position.coords.longitude
+                        };
+
+
+                        map.setCenter(pos);
+
+                        var marker = new google.maps.Marker({
+                            position: pos,
+
+                            animation: google.maps.Animation.DROP,
+                            map: map
+
+                        });
+
+                        marker.addListener('mouseout', toggleBounce);
+
+                        function toggleBounce() {
+                            if (marker.getAnimation() !== null) {
+                                marker.setAnimation(null);
+                            }
+                            else {
+                                marker.setAnimation(google.maps.Animation.BOUNCE);
+                            }
+                        }
+
+                    },
+
+                        function () {
+                            handleLocationError(true, infoWindow, map.getCenter());
+                        });
+
+                }
+                else {
+                    // Browser doesn't support Geolocation
+                    handleLocationError(false, infoWindow, map.getCenter());
+                }
+
+            }
+
+            function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                infoWindow.setPosition(pos);
+                infoWindow.setContent(browserHasGeolocation ?
+                    'Error: The Geolocation service failed.' :
+                    'Error: Your browser doesn\'t support geolocation.');
+            }
+
+            function drop() {
+                clearMarkers();
+                for (var i = 0; i < neighborhoods.length; i++) {
+                    addMarkerWithTimeout(neighborhoods[i], i * 200);
+                }
+            }
+
+            function addMarkerWithTimeout(position, timeout) {
+                window.setTimeout(function () {
+                    markers.push(new google.maps.Marker({
+                        position: position,
+                        map: map,
+                        animation: google.maps.Animation.DROP
+                    }));
+                }, timeout);
+            }
+
+            function clearMarkers() {
+                for (var i = 0; i < markers.length; i++) {
+                    markers[i].setMap(null);
+                }
+                markers = [];
+            }
+
+    </script>
 
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpRBZnrnMtwFyxGD9Ve9AUvMUQdcDg_Rw&callback=initMap">
     </script>
 
-    <script>
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: -34.5979011, lng: -58.43593199999998 },
-                zoom: 13
-            });
-            var infoWindow = new google.maps.InfoWindow({ map: map });
-
-            // Try HTML5 geolocation.
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    var pos = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    };
-
-                    map.setCenter(pos);
-
-                    var marker = new google.maps.Marker({
-                        position: pos,
-                        animation: google.maps.Animation.DROP,
-                        map: map
-                    });
-                    marker.addListener('mouseout', toggleBounce);
-
-                    function toggleBounce() {
-                        if (marker.getAnimation() !== null) {
-                            marker.setAnimation(null);
-                        } else {
-                            marker.setAnimation(google.maps.Animation.BOUNCE);
-                        }
-                    }
-
-
-                }, function () {
-                    handleLocationError(true, infoWindow, map.getCenter());
-                });
-            } else {
-                // Browser doesn't support Geolocation
-                handleLocationError(false, infoWindow, map.getCenter());
-            }
-        }
-
-        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-            infoWindow.setPosition(pos);
-            infoWindow.setContent(browserHasGeolocation ?
-                'Error: The Geolocation service failed.' :
-                'Error: Your browser doesn\'t support geolocation.');
-        }
-
-     
-
-    </script>
+    <div id="map"></div>
 
 
 
+    
+    
     <input type="checkbox" class="checkbox-lateral" id="check">
     <label class="menulateral" for="check">Filtros</label>
 
     <div class="left-panel-lateral">
-        <ul id="#ul">
+        <ul id="ul">
 
             <a id="a" href=""><li id="li">COMIDA</li></a>
             <form>
@@ -107,6 +163,11 @@
                 <input type="radio" name="gender" value="other"> +600
             </form>
 
+            <br>
+            <div id="floating-panel">
+                <label id="drop" onclick="drop()">Aplicar</label>
+            </div>
+
         </ul>
     </div>
 
@@ -121,7 +182,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               
+
             </div>
 
             <div class="navbar-collapse collapse">
@@ -138,10 +199,8 @@
 
     <div class="container body-content">
         @RenderBody()
-        <hr />
-
-    </div>
+     </div>
 
 
 </body>
-    </html>
+</html>
