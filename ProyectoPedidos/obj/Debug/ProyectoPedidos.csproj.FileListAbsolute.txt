@@ -579,3 +579,233 @@ C:\Users\Leandro\Desktop\ComidaDeliveryWEB\ProyectoPedidos\obj\Debug\ProyectoPed
 C:\Users\Leandro\Desktop\ComidaDeliveryWEB\ProyectoPedidos\obj\Debug\ProyectoPedidos.csproj.CopyComplete
 C:\Users\Leandro\Desktop\ComidaDeliveryWEB\ProyectoPedidos\obj\Debug\ProyectoPedidos.dll
 C:\Users\Leandro\Desktop\ComidaDeliveryWEB\ProyectoPedidos\obj\Debug\ProyectoPedidos.pdb
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\ApplicationInsights.config
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\csc.exe
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\csc.exe.config
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\csc.rsp
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\csi.exe
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\csi.rsp
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.AppContext.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\vbc.exe
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\vbc.exe.config
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\vbc.rsp
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\VBCSCompiler.exe
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\ProyectoPedidos.dll.config
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\ProyectoPedidos.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\ProyectoPedidos.pdb
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Antlr3.Runtime.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\EntityFramework.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\EntityFramework.SqlServer.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.Web.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Newtonsoft.Json.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Owin.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Helpers.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Mvc.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Optimization.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Razor.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.Razor.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\WebGrease.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Helpers.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Mvc.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Optimization.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Razor.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.Razor.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Antlr3.Runtime.pdb
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Newtonsoft.Json.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\EntityFramework.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\EntityFramework.SqlServer.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.Web.xml
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.Helpers.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.Mvc.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.Razor.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.WebPages.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\EntityFramework.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\obj\Debug\ProyectoPedidos.csprojResolveAssemblyReference.cache
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\obj\Debug\ProyectoPedidos.dll
+C:\Users\ComIT\Documents\GitHub\ComidaDeliveryWEB\ProyectoPedidos\obj\Debug\ProyectoPedidos.pdb
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\ApplicationInsights.config
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\csc.exe
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\csc.exe.config
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\csc.rsp
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\csi.exe
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\csi.rsp
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.AppContext.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.Collections.Immutable.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.IO.FileSystem.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\System.Reflection.Metadata.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\vbc.exe
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\vbc.exe.config
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\vbc.rsp
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\VBCSCompiler.exe
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\roslyn\VBCSCompiler.exe.config
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\ProyectoPedidos.dll.config
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\ProyectoPedidos.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\ProyectoPedidos.pdb
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Antlr3.Runtime.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\EntityFramework.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\EntityFramework.SqlServer.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.Agent.Intercept.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.DependencyCollector.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.Web.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.WindowsServer.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.ApplicationInsights.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Core.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Cookies.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Facebook.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Google.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.OAuth.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Twitter.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Web.Infrastructure.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Newtonsoft.Json.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Owin.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Helpers.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Mvc.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Optimization.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Razor.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.Deployment.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.Razor.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\WebGrease.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Helpers.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Mvc.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Optimization.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.Razor.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.Deployment.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\System.Web.WebPages.Razor.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Antlr3.Runtime.pdb
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Newtonsoft.Json.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\EntityFramework.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\EntityFramework.SqlServer.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Core.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Facebook.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Cookies.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.OAuth.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Google.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.Twitter.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.ApplicationInsights.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.DependencyCollector.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.WindowsServer.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\Microsoft.AI.Web.xml
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.Helpers.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.Mvc.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.Optimization.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.Razor.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.WebPages.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\EntityFramework.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\EntityFramework.SqlServer.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Security.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Google.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\obj\Debug\ProyectoPedidos.csprojResolveAssemblyReference.cache
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\obj\Debug\ProyectoPedidos.dll
+D:\6. ComIT\Release3.0\ComidaDeliveryWEB\ProyectoPedidos\obj\Debug\ProyectoPedidos.pdb
