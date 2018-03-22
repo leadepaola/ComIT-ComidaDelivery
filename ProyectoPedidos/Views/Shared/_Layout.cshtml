@@ -14,114 +14,163 @@
     @RenderSection("scripts", required: false)
 
     <link href="~/Content/estilos.css" rel="stylesheet" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
 <body>
-    
+    <div id="rec"></div>
+
+    <header id="headerLogo">
+        <nav id="navLogo">
+            <ul class="ulLogo">
+                <a class="aLogo"><li class="liLogo">Inicio</li></a>
+                <a class="aLogo"><li class="liLogo">Videos</li></a>
+                <a class="aLogo"><li class="liLogo">Im&aacute;genes</li></a>
+            </ul>
+
+            <img id='logo' src='~/Content/Imagenes/pedidos2.png'>
+
+            <ul class="ulLogo">
+                <a class="aLogo"><li class="liLogo">Youtube</li></a>
+                <a class="aLogo"><li class="liLogo">Nosotros</li></a>
+                <a class="aLogo"><li class="liLogo">Contacto</li></a>
+            </ul>
+        </nav>
+    </header>
+
     <script>
-            // If you're adding a number of markers, you may want to drop them on the map
-            // consecutively rather than all at once. This example shows how to use
-            // window.setTimeout() to space your markers' animation.
+        $(document).ready(function () {
 
-            var neighborhoods = [
-                { lat: -34.590757, lng: -58.413001 },
-                { lat: -34.606903, lng: -58.425693 },
-                { lat: -34.579161, lng: -58.452015 },
-                { lat: -34.566954, lng: -58.434647 },
-                { lat: -34.599523, lng: -58.382782 },
-                { lat: -34.601839, lng: -58.592444 },
-                { lat: -34.601977, lng: -58.572721 },
-                { lat: -34.613118, lng: -58.362982 },
-                { lat: -34.589040, lng: -58.447594 },
-                { lat: -34.580127, lng: -58.424410 }
-            ];
+            $("#rec").css({ "height": $(window).height() + "px" });
 
-            var markers = [];
-            var map;
+            $("#logo").css({ "margin-top": "-5px", "width": "50px", "height": "50px" });
 
-            function initMap() {
-                map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 13,
-                    center: { lat: -34.5979011, lng: -58.43593199999998 }
-                });
-                var infoWindow = new google.maps.InfoWindow({ map: map });
+            $("#headerLogo").css({ "background-color": "#3C3C3C" });
 
+            var flag = false;
+            var scroll;
+            var con = 1;
+            if (con = 1) {
+                $("#logo").css({ "margin-top": "170px", "width": "250px", "height": "250px" });
+                $("#headerLogo").css({ "background-color": "transparent" });
+                con++;
+            }
 
-                // Try HTML5 geolocation.
-                if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(function (position) {
-                        var pos = {
-                            lat: position.coords.latitude,
-                            lng: position.coords.longitude
-                        };
+            $("#navLogo").mouseover(function () {
+                $("#logo").css({ "margin-top": "-12px", "width": "45px", "height": "45px" });
+                
+                $("#rec").css({ "opacity": "0", "z-index": "-1" });
+
+               // $(".navbar-inverse").css({ "height": "60px" });
+            });
+        });
+    </script>
 
 
-                        map.setCenter(pos);
 
-                        var marker = new google.maps.Marker({
-                            position: pos,
+    <script>
+        // If you're adding a number of markers, you may want to drop them on the map
+        // consecutively rather than all at once. This example shows how to use
+        // window.setTimeout() to space your markers' animation.
 
-                            animation: google.maps.Animation.DROP,
-                            map: map
+        var neighborhoods = [
+            { lat: -34.590757, lng: -58.413001 },
+            { lat: -34.606903, lng: -58.425693 },
+            { lat: -34.579161, lng: -58.452015 },
+            { lat: -34.566954, lng: -58.434647 },
+            { lat: -34.599523, lng: -58.382782 },
+            { lat: -34.601839, lng: -58.592444 },
+            { lat: -34.601977, lng: -58.572721 },
+            { lat: -34.613118, lng: -58.362982 },
+            { lat: -34.589040, lng: -58.447594 },
+            { lat: -34.580127, lng: -58.424410 }
+        ];
 
-                        });
+        var markers = [];
+        var map;
 
-                        marker.addListener('mouseout', toggleBounce);
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: { lat: -34.5979011, lng: -58.43593199999998 }
+            });
+            var infoWindow = new google.maps.InfoWindow({ map: map });
 
-                        function toggleBounce() {
-                            if (marker.getAnimation() !== null) {
-                                marker.setAnimation(null);
-                            }
-                            else {
-                                marker.setAnimation(google.maps.Animation.BOUNCE);
-                            }
+
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+
+
+                    map.setCenter(pos);
+
+                    var marker = new google.maps.Marker({
+                        position: pos,
+
+                        animation: google.maps.Animation.DROP,
+                        map: map
+
+                    });
+
+                    marker.addListener('mouseout', toggleBounce);
+
+                    function toggleBounce() {
+                        if (marker.getAnimation() !== null) {
+                            marker.setAnimation(null);
                         }
+                        else {
+                            marker.setAnimation(google.maps.Animation.BOUNCE);
+                        }
+                    }
 
-                    },
+                },
 
-                        function () {
-                            handleLocationError(true, infoWindow, map.getCenter());
-                        });
-
-                }
-                else {
-                    // Browser doesn't support Geolocation
-                    handleLocationError(false, infoWindow, map.getCenter());
-                }
+                    function () {
+                        handleLocationError(true, infoWindow, map.getCenter());
+                    });
 
             }
-
-            function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-                infoWindow.setPosition(pos);
-                infoWindow.setContent(browserHasGeolocation ?
-                    'Error: The Geolocation service failed.' :
-                    'Error: Your browser doesn\'t support geolocation.');
+            else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
             }
 
-            function drop() {
-                clearMarkers();
-                for (var i = 0; i < neighborhoods.length; i++) {
-                    addMarkerWithTimeout(neighborhoods[i], i * 200);
-                }
-            }
+        }
 
-            function addMarkerWithTimeout(position, timeout) {
-                window.setTimeout(function () {
-                    markers.push(new google.maps.Marker({
-                        position: position,
-                        map: map,
-                        animation: google.maps.Animation.DROP
-                    }));
-                }, timeout);
-            }
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.');
+        }
 
-            function clearMarkers() {
-                for (var i = 0; i < markers.length; i++) {
-                    markers[i].setMap(null);
-                }
-                markers = [];
+        function drop() {
+            clearMarkers();
+            for (var i = 0; i < neighborhoods.length; i++) {
+                addMarkerWithTimeout(neighborhoods[i], i * 200);
             }
+        }
+
+        function addMarkerWithTimeout(position, timeout) {
+            window.setTimeout(function () {
+                markers.push(new google.maps.Marker({
+                    position: position,
+                    map: map,
+                    animation: google.maps.Animation.DROP
+                }));
+            }, timeout);
+        }
+
+        function clearMarkers() {
+            for (var i = 0; i < markers.length; i++) {
+                markers[i].setMap(null);
+            }
+            markers = [];
+        }
 
     </script>
 
@@ -133,8 +182,8 @@
 
 
 
-    
-    
+
+
     <input type="checkbox" class="checkbox-lateral" id="check">
     <label class="menulateral" for="check">Filtros</label>
 
@@ -192,14 +241,31 @@
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
-                @Html.ActionLink("hola", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+             
             </div>
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="container body-content">
         @RenderBody()
-     </div>
+    </div>
 
 
 </body>
