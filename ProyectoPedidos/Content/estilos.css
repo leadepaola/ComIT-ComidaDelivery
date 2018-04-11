@@ -25,19 +25,16 @@ h1 {
     opacity: 0.9;
     margin-left: auto;
     margin-right: auto;
-    transition: height 0.9s;
     top: 0;
-    z-index:19;
+    z-index: 19;
+    
 }
 
-    .navbar-inverse:hover {
-        height: 10px;
-        
-    }
 
-    .navbar-inverse .navbar-nav > li > a  {
-        color: #D6DBDF;
-    }
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #D6DBDF;
+}
 
 
 
