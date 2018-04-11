@@ -16,25 +16,26 @@ h1 {
     border-radius: 20px;
 }
 
-.navbar-inverse {
+
+/*  HEADER DE VISUAL STUDIO  */
+
+
+
+navbar-inverse {
     background-color: #922B21;
     height: 20px;
     width: 100%;
     opacity: 0.9;
     margin-left: auto;
     margin-right: auto;
-    transition: height 0.9s;
+    transition: height 9.9s;
     top: 0;
-    z-index:19;
+    z-index: 19;
 }
-    .navbar-inverse:hover {
-        height: 60px;
-    }
 
-
-    .navbar-inverse .navbar-nav > li > a  {
-        color: #D6DBDF;
-    }
+    .navbar-inverse .navbar-nav > li > a {
+    color: #D6DBDF;
+}
 
 
 
@@ -200,7 +201,7 @@ html, body {
     width: 100%;
     height: 70px;
     background-color: transparent;
-    -webkit-transition: background-color .5s;
+    -webkit-transition: background-color .5s, margin-top .5s;
     position: fixed;
     z-index: 20;
     transition-delay: .2s;
@@ -211,7 +212,7 @@ html, body {
     margin: auto;
     margin-top: 15px;
     height: 40px;
-    -webkit-transition: margin-left .5s;
+    -webkit-transition: margin-left .5s, margin-top 0.5s;
 }
 
 .ulLogo {
