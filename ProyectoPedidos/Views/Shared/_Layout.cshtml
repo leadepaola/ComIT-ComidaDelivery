@@ -19,7 +19,7 @@
 </head>
 <body>
     <div id="rec"></div>
-
+    <link href="~/Content/estilos.css" rel="stylesheet" />
     <header id="headerLogo">
         <nav id="navLogo">
             <ul class="ulLogo">
@@ -59,14 +59,14 @@
             $("#navLogo").mouseover(function () {
                 $("#logo").css({ "margin-top": "-70px", "width": "45px", "height": "45px" });
 
-                
+
                 $("#navLogo").css({ "margin-top": "-70px" });
-                
+
                 $("#headerLogo").css({ "margin-top": "-70px" });
 
                 $("#rec").css({ "opacity": "0", "z-index": "-1" });
 
-               // $(".navbar-inverse").css({ "height": "60px" });
+                $(".navbar-inverse").css({ "height": "20px" });
             });
         });
     </script>
@@ -246,7 +246,7 @@
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
-             
+
             </div>
         </div>
     </div>
