@@ -10,6 +10,13 @@ namespace ProyectoPedidos.Controllers
     {
         public ActionResult Index()
         {
+            DatabasePedidosOnlineEntities hola = new DatabasePedidosOnlineEntities();
+            
+            System.Collections.Generic.List<Comercio2> i = hola.Comercio2.Where(x=>x.Id==1).ToList();
+            ViewBag.comercios = i;
+            
+
+
             return View();
         }
 

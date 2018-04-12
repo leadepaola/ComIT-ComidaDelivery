@@ -71,6 +71,10 @@
         });
     </script>
 
+    @{
+        List<Comercio2> comercios = ViewBag.comercios;
+        string s = "";
+    }
 
 
     <script>
@@ -79,7 +83,24 @@
         // window.setTimeout() to space your markers' animation.
 
         var neighborhoods = [
-            { lat: -34.590757, lng: -58.413001 },
+
+            @{ 
+                foreach(Comercio2 c in comercios)
+                {
+                    s += "{ lat:" + c.lat.ToString().Replace(",",".") + ", lng:" + c.lng.ToString().Replace(",", ".") + "}";
+                }
+            }
+            @(s)
+        ];
+
+        @*for (var i = 0; i < @comercios.Count(); i++) {
+
+            neighborhoods.push(i);
+                    }*@
+
+        @*var neighborhoods = [
+
+            { lat: -34.590757, lng: @comercios. },
             { lat: -34.606903, lng: -58.425693 },
             { lat: -34.579161, lng: -58.452015 },
             { lat: -34.566954, lng: -58.434647 },
@@ -89,10 +110,12 @@
             { lat: -34.613118, lng: -58.362982 },
             { lat: -34.589040, lng: -58.447594 },
             { lat: -34.580127, lng: -58.424410 }
-        ];
+        ];*@
 
         var markers = [];
         var map;
+
+        @ViewBag.Localizaciones
 
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
