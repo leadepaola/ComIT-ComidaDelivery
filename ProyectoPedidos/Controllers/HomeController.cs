@@ -12,7 +12,7 @@ namespace ProyectoPedidos.Controllers
         {
             DatabasePedidosOnlineEntities hola = new DatabasePedidosOnlineEntities();
 
-                System.Collections.Generic.List<Comercio2> i = hola.Comercio2.Where(x=>x.Id==1).ToList();
+                System.Collections.Generic.List<Comercio2> i = hola.Comercio2.ToList();
                 System.Collections.Generic.List<Comercio2> i2 = hola.Comercio2.Where(x => x.Id == 2).ToList();
 
 
