@@ -161,7 +161,7 @@
 
                     });
 
-                    marker.addListener('mouseout', toggleBounce);
+                    marker.addListener('click', toggleBounce);
 
                     function toggleBounce() {
                         if (marker.getAnimation() !== null) {
@@ -193,12 +193,25 @@
                 'Error: Your browser doesn\'t support geolocation.');
         }
 
+        function markerJump() {
+
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+            
+        }
+
+
+
         function drop() {
             clearMarkers();
+            
             for (var i = 0; i < neighborhoods.length; i++) {
                 addMarkerWithTimeout(neighborhoods[i], i * 200);
             }
+            markerJump();
         }
+
+
+
 
         function addMarkerWithTimeout(position, timeout) {
             window.setTimeout(function () {
@@ -265,6 +278,15 @@
             <div id="floating-panel">
                 <label id="boton" onclick="drop()">Aplicar</label>
             </div>
+            
+            <br> <br> <br>
+            
+            <div id="floating-panel">
+                <label id="boton" onclick="clearMarkers()">Limpiar</label>
+            </div>
+
+         
+
 
         </ul>
     </div>
