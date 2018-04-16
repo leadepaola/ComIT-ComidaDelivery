@@ -19,7 +19,7 @@
 </head>
 <body>
     <div id="rec"></div>
-    <link href="~/Content/estilos.css" rel="stylesheet" />
+
     <header id="headerLogo">
         <nav id="navLogo">
             <ul class="ulLogo">
@@ -40,6 +40,8 @@
 
     <script>
         $(document).ready(function () {
+
+
 
             $("#rec").css({ "height": $(window).height() + "px" });
 
@@ -74,7 +76,10 @@
     @{
         List<Comercio2> comercios = ViewBag.comercios;
         string s = "";
+        List<Comercio2> comercios2 = ViewBag.comercios2;
+        string y = "";
     }
+  
 
 
     <script>
@@ -82,22 +87,32 @@
         // consecutively rather than all at once. This example shows how to use
         // window.setTimeout() to space your markers' animation.
 
+
+
+
+
+
         var neighborhoods = [
 
-            @{ 
-                foreach(Comercio2 c in comercios)
+            @{
+                foreach (Comercio2 c in comercios)
                 {
                     s += "{ lat:" + c.lat.ToString().Replace(",",".") + ", lng:" + c.lng.ToString().Replace(",", ".") + "}";
                 }
+
             }
-            @(s)
+            @(s),
+
+            @{
+                foreach(Comercio2 f in comercios2)
+                {
+                y += "{ lat:" + f.lat.ToString().Replace(",", ".") + ", lng:" + f.lng.ToString().Replace(",", ".") + "}";
+                }
+            }
+            @(y)
         ];
 
-        @*for (var i = 0; i < @comercios.Count(); i++) {
-
-            neighborhoods.push(i);
-                    }*@
-
+ 
         @*var neighborhoods = [
 
             { lat: -34.590757, lng: @comercios. },
@@ -118,6 +133,8 @@
         @ViewBag.Localizaciones
 
         function initMap() {
+
+
             map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 13,
                 center: { lat: -34.5979011, lng: -58.43593199999998 }
@@ -144,7 +161,7 @@
 
                     });
 
-                    marker.addListener('mouseout', toggleBounce);
+                    marker.addListener('click', toggleBounce);
 
                     function toggleBounce() {
                         if (marker.getAnimation() !== null) {
@@ -176,12 +193,25 @@
                 'Error: Your browser doesn\'t support geolocation.');
         }
 
+        function markerJump() {
+
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+            
+        }
+
+
+
         function drop() {
             clearMarkers();
+            
             for (var i = 0; i < neighborhoods.length; i++) {
                 addMarkerWithTimeout(neighborhoods[i], i * 200);
             }
+            markerJump();
         }
+
+
+
 
         function addMarkerWithTimeout(position, timeout) {
             window.setTimeout(function () {
@@ -199,6 +229,10 @@
             }
             markers = [];
         }
+
+
+
+
 
     </script>
 
@@ -244,6 +278,15 @@
             <div id="floating-panel">
                 <label id="boton" onclick="drop()">Aplicar</label>
             </div>
+            
+            <br> <br> <br>
+            
+            <div id="floating-panel">
+                <label id="boton" onclick="clearMarkers()">Limpiar</label>
+            </div>
+
+         
+
 
         </ul>
     </div>
