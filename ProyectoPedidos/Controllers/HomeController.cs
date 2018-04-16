@@ -11,10 +11,14 @@ namespace ProyectoPedidos.Controllers
         public ActionResult Index()
         {
             DatabasePedidosOnlineEntities hola = new DatabasePedidosOnlineEntities();
-            
-            System.Collections.Generic.List<Comercio2> i = hola.Comercio2.Where(x=>x.Id==1).ToList();
+
+                System.Collections.Generic.List<Comercio2> i = hola.Comercio2.Where(x=>x.Id==1).ToList();
+                System.Collections.Generic.List<Comercio2> i2 = hola.Comercio2.Where(x => x.Id == 2).ToList();
+
+
+
             ViewBag.comercios = i;
-            
+            ViewBag.comercios2 = i2;
 
 
             return View();
@@ -30,6 +34,7 @@ namespace ProyectoPedidos.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
 
             return View();
         }
