@@ -94,6 +94,26 @@
 
         var neighborhoods = [
 
+
+                 @{
+                     int i = 0;
+                     foreach (Comercio2 c in comercios)
+                     {
+                         i++;
+                         if (i == comercios.Count)
+                         {
+                             s += "{ lat:" + c.lat.ToString().Replace(",", ".") + ", lng:" + c.lng.ToString().Replace(",", ".") + "}";
+                         }
+                         else
+                         {
+                             s += "{ lat:" + c.lat.ToString().Replace(",", ".") + ", lng:" + c.lng.ToString().Replace(",", ".") + "},";
+                         }
+                     }
+            }
+            @(s)
+
+
+        @*
             @{
                 foreach (Comercio2 c in comercios)
                 {
@@ -109,10 +129,10 @@
                 y += "{ lat:" + f.lat.ToString().Replace(",", ".") + ", lng:" + f.lng.ToString().Replace(",", ".") + "}";
                 }
             }
-            @(y)
+            @(y)*@
         ];
 
- 
+
         @*var neighborhoods = [
 
             { lat: -34.590757, lng: @comercios. },
@@ -139,7 +159,32 @@
                 zoom: 13,
                 center: { lat: -34.5979011, lng: -58.43593199999998 }
             });
+
             var infoWindow = new google.maps.InfoWindow({ map: map });
+            var infowindow = new google.maps.InfoWindow({ content: contentString  });
+
+            var contentString = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+                '<div id="bodyContent">' +
+                '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+                'sandstone rock formation in the southern part of the ' +
+                'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
+                'south west of the nearest large town, Alice Springs; 450&#160;km ' +
+                '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
+                'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
+                'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
+                'Aboriginal people of the area. It has many springs, waterholes, ' +
+                'rock caves and ancient paintings. Uluru is listed as a World ' +
+                'Heritage Site.</p>' +
+                '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+                'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
+                '(last visited June 22, 2009).</p>' +
+                '</div>' +
+                '</div>';
+
+
 
 
             // Try HTML5 geolocation.
@@ -161,16 +206,50 @@
 
                     });
 
-                    marker.addListener('click', toggleBounce);
+                   @{
+                       string ss = "";
+                       int h = 0;
+                       foreach (Comercio2 c in comercios)
+                       {
+                           h++;
+                           ss += " var pos" + h + " = {";
+                           ss += "   lat:" + c.lat.ToString().Replace(",", ".") + ",";
+                           ss += "  lng: " + c.lng.ToString().Replace(",", ".") + "";
+                           ss += "};";
+
+
+                           ss += " map.setCenter(pos" + h + ");";
+
+                           ss += "      var marker" + h + " = new google.maps.Marker({";
+                           ss += "  position: pos" + h + ",";
+
+                           ss += "  animation: google.maps.Animation.DROP,";
+                           ss += "  map: map";
+
+                           ss += "   });";
+
+                       }
+                   }
+            @(ss)
+                     
+                       //        marker.addListener('click', toggleBounce);
+
+                       marker.addListener('click', function () {
+                           infowindow.open(map, marker);
+                       });
+
+
 
                     function toggleBounce() {
-                        if (marker.getAnimation() !== null) {
-                            marker.setAnimation(null);
-                        }
-                        else {
-                            marker.setAnimation(google.maps.Animation.BOUNCE);
-                        }
-                    }
+                           if (marker.getAnimation() !== null) {
+                               marker.setAnimation(null);
+                           }
+                           else {
+                               marker.setAnimation(google.maps.Animation.BOUNCE);
+                           }
+                       }
+
+
 
                 },
 
@@ -196,20 +275,35 @@
         function markerJump() {
 
             marker.setAnimation(google.maps.Animation.BOUNCE);
-            
+
         }
 
 
 
         function drop() {
             clearMarkers();
-            
+
             for (var i = 0; i < neighborhoods.length; i++) {
                 addMarkerWithTimeout(neighborhoods[i], i * 200);
             }
-            markerJump();
-        }
+            var marker2 = new google.maps.Marker({
+                position: { lat: -34.580127, lng: -58.424410 },
 
+                animation: google.maps.Animation.DROP,
+                map: map
+
+            });
+
+            marker2.addListener('click', toggleBounce2);
+            function toggleBounce2() {
+                if (marker2.getAnimation() !== null) {
+                    marker2.setAnimation(null);
+                }
+                else {
+                    marker2.setAnimation(google.maps.Animation.BOUNCE);
+                }
+            }
+        }
 
 
 
