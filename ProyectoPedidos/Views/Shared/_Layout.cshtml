@@ -146,6 +146,10 @@ var neighborhoods = [
 
         @ViewBag.Localizaciones
 
+
+
+
+   
         function initMap() {
 
 
@@ -154,29 +158,11 @@ var neighborhoods = [
                 center: { lat: -34.5979011, lng: -58.43593199999998 }
             });
 
-            var infoWindow = new google.maps.InfoWindow({ map: map });
-            var infowindow = new google.maps.InfoWindow({ content: contentString  });
+           // var infoWindow = new google.maps.InfoWindow({ map: map });
+            
 
-            var contentString = '<div id="content">' +
-                '<div id="siteNotice">' +
-                '</div>' +
-                '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-                '<div id="bodyContent">' +
-                '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-                'sandstone rock formation in the southern part of the ' +
-                'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-                'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-                '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-                'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-                'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-                'Aboriginal people of the area. It has many springs, waterholes, ' +
-                'rock caves and ancient paintings. Uluru is listed as a World ' +
-                'Heritage Site.</p>' +
-                '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-                'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-                '(last visited June 22, 2009).</p>' +
-                '</div>' +
-                '</div>';
+
+            
 
 
 
@@ -192,65 +178,42 @@ var neighborhoods = [
 
                     map.setCenter(pos);
 
+
+
+
                     var marker = new google.maps.Marker({
                         position: pos,
-
-                        animation: google.maps.Animation.DROP,
+                       // animation: google.maps.Animation.DROP,
+                        animation: google.maps.Animation.BOUNCE,
                         map: map
+                    });           
+                
+                    //SEGUIR ACÁ
 
-                    });
-                //var marker2 = new google.maps.Marker({
-                //    position: { lat: -34.580127, lng: -58.424410 },
+                    //var infowindow0 = new google.maps.InfoWindow({
+                    //    content: contentString0,
+                    //    maxWidth: 200
+                    //});
+                    //var contentString0 = '<div id="content">' +
+                    //    '<div id="siteNotice">' +
+                    //    '</div>' +
+                    //    '<h4><b>Las medialunas del abuelo</b></h4>' +
+                    //    '<div id="bodyContent">' +
 
-                //    animation: google.maps.Animation.DROP,
-                //    map: map
-
-                //});
-                   @{
-                       string ss = "";
-                       int h = 0;
-                       foreach (Comercio2 c in comercios)
-                       {
-                           h++;
-                           //ss += " var pos" + h + " = {";
-                           //ss += "   lat:" + c.lat.ToString().Replace(",", ".") + ",";
-                           //ss += "  lng: " + c.lng.ToString().Replace(",", ".") + "";
-                           //ss += "};";
-
-
-                           //ss += " map.setCenter(pos" + h + ");";
-
-                           ss += " var marker" +h+ " = new google.maps.Marker({";
-                           //position: pos,
-                           //{ lat: -34.606903, lng: -58.425693 },
-                           ss += " position: {lat:" + c.lat.ToString().Replace(",", ".") + ",";
-
-                          
-                           ss += "  lng: " + c.lng.ToString().Replace(",", ".") + "},";
+                    //    '<p>Página web: <a href="http://www.lasmedialunasdelabuelo.com">' +
+                    //    'ingresar</a> ' +
+                    //    '</p>' +
+                    //    '</div>' +
+                    //    '</div>';
+                    //marker.addListener('click', function () {
+                    //    infowindow0.open(map, marker);                                               
+                    //});
 
 
-                           ss += " animation: google.maps.Animation.DROP,";
-                           ss += " map: map";
-
-                           ss += " });";
-
-                       }
-                   }
-            @(ss)
-                     
-                       //        marker.addListener('click', toggleBounce);
-
-                       marker.addListener('click', function () {
-                           infowindow.open(map, marker);
-                    });
-                    marker1.addListener('click', function () {
-                        infowindow.open(map, marker1);
-                    });
-                    marker2.addListener('click', function () {
-                        infowindow.open(map, marker2);
-                    });
 
 
+
+                     // marker.addListener('click', toggleBounce);
 
                     function toggleBounce() {
                            if (marker.getAnimation() !== null) {
@@ -259,9 +222,7 @@ var neighborhoods = [
                            else {
                                marker.setAnimation(google.maps.Animation.BOUNCE);
                            }
-                       }
-
-
+                    }
 
                 },
 
@@ -284,20 +245,113 @@ var neighborhoods = [
                 'Error: Your browser doesn\'t support geolocation.');
         }
 
-        function markerJump() {
 
-            marker.setAnimation(google.maps.Animation.BOUNCE);
+    var contentString2 = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h4><b>Las medialunas del abuelo</b></h4>' +
+        '<div id="bodyContent">' +
 
-        }
+        '<p>Página web: <a href="http://www.lasmedialunasdelabuelo.com">' +
+        'ingresar</a> ' +
+        '</p>' +
+        '</div>' +
+        '</div>';
+    var contentString3 = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h4><b>Pizza Garden</b></h4>' +
+        '<div id="bodyContent">' +
+
+        '<p>Página web: <a href="http://www.pizzagarden.com">' +
+        'ingresar</a> ' +
+        '</p>' +
+        '</div>' +
+        '</div>';
+    var contentString4 = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h4><b>Café Martinez</b></h4>' +
+        '<div id="bodyContent">' +
+
+        '<p>Página web: <a href="https://cafemartinez.com">' +
+        'ingresar</a> ' +
+        '</p>' +
+        '</div>' +
+        '</div>';
+    var contentString5 = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h4><b>McDonalds</b></h4>' +
+        '<div id="bodyContent">' +
+
+        '<p>Página web: <a href="http://www.mcdonalds.com.ar/">' +
+        'ingresar</a> ' +
+        '</p>' +
+        '</div>' +
+        '</div>';
 
 
+    function drop() {
+        var marker2 = new google.maps.Marker({
+            position: { lat: -34.596962, lng: -58.588046 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        var infowindow2 = new google.maps.InfoWindow({
+            content: contentString2,
+            maxWidth: 200
+        });
+        marker2.addListener('click', function () {
+            infowindow2.open(map, marker2);
+        });
+//marker3
+        var marker3 = new google.maps.Marker({
+            position: { lat: -34.602353, lng: -58.556285 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        var infowindow3 = new google.maps.InfoWindow({
+            content: contentString3,
+            maxWidth: 200
+        });
+        marker3.addListener('click', function () {
+            infowindow3.open(map, marker3);
+        });
+        //marker4
+        var marker4 = new google.maps.Marker({
+            position: { lat: -34.623714, lng: -58.592216 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        var infowindow4 = new google.maps.InfoWindow({
+            content: contentString4,
+            maxWidth: 200
+        });
+        marker4.addListener('click', function () {
+            infowindow4.open(map, marker4);
+        });
+        //marker5
+        var marker5 = new google.maps.Marker({
+            position: { lat: -34.591549, lng: -58.629244 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        var infowindow5 = new google.maps.InfoWindow({
+            content: contentString5,
+            maxWidth: 200
+        });
+        marker5.addListener('click', function () {
+            infowindow5.open(map, marker5);
+        });
 
-        function drop() {
-            clearMarkers();
+           // clearMarkers();
+          //  comercios();
+            //for (var i = 0; i < neighborhoods.length; i++) {
+            //    addMarkerWithTimeout(neighborhoods[i], i * 200);
+            //}
 
-            for (var i = 0; i < neighborhoods.length; i++) {
-                addMarkerWithTimeout(neighborhoods[i], i * 200);
-            }
+
             //var marker2 = new google.maps.Marker({
             //    position: { lat: -34.580127, lng: -58.424410 },
 
@@ -336,6 +390,47 @@ var neighborhoods = [
             markers = [];
         }
 
+
+       
+
+    function comercios() {
+                   @{
+                       string ss = "";
+                       int h = 0;
+                       foreach (Comercio2 c in comercios)
+                       {
+                           h++;
+                           //ss += " var pos" + h + " = {";
+                           //ss += "   lat:" + c.lat.ToString().Replace(",", ".") + ",";
+                           //ss += "  lng: " + c.lng.ToString().Replace(",", ".") + "";
+                           //ss += "};";
+
+
+                           //ss += " map.setCenter(pos" + h + ");";
+
+                           ss += " var marker" +h+ " = new google.maps.Marker({";
+                           //position: pos,
+                           //{ lat: -34.606903, lng: -58.425693 },
+                           ss += " position: {lat:" + c.lat.ToString().Replace(",", ".") + ",";
+
+
+                           ss += "  lng: " + c.lng.ToString().Replace(",", ".") + "},";
+
+
+                           ss += " animation: google.maps.Animation.DROP,";
+                           ss += " map: map";
+
+                           ss += " });";
+
+                       }
+
+                   }
+            @(ss)
+
+  
+
+
+    }
 
 
 
