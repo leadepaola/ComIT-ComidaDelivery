@@ -82,35 +82,29 @@
   
 
 
-    <script>
-        // If you're adding a number of markers, you may want to drop them on the map
-        // consecutively rather than all at once. This example shows how to use
-        // window.setTimeout() to space your markers' animation.
+<script>
+// If you're adding a number of markers, you may want to drop them on the map
+// consecutively rather than all at once. This example shows how to use
+// window.setTimeout() to space your markers' animation.
 
+var neighborhoods = [
 
-
-
-
-
-        var neighborhoods = [
-
-
-                 @{
-                     int i = 0;
-                     foreach (Comercio2 c in comercios)
-                     {
-                         i++;
-                         if (i == comercios.Count)
-                         {
-                             s += "{ lat:" + c.lat.ToString().Replace(",", ".") + ", lng:" + c.lng.ToString().Replace(",", ".") + "}";
-                         }
-                         else
-                         {
-                             s += "{ lat:" + c.lat.ToString().Replace(",", ".") + ", lng:" + c.lng.ToString().Replace(",", ".") + "},";
-                         }
-                     }
-            }
-            @(s)
+    @{
+    int i = 0;
+    foreach (Comercio2 c in comercios)
+    {
+        i++;
+        if (i == comercios.Count)
+        {
+            s += "{ lat:" + c.lat.ToString().Replace(",", ".") + ", lng:" + c.lng.ToString().Replace(",", ".") + "}";
+        }
+        else
+        {
+            s += "{ lat:" + c.lat.ToString().Replace(",", ".") + ", lng:" + c.lng.ToString().Replace(",", ".") + "},";
+        }
+    }
+    }
+    @(s)
 
 
         @*
@@ -130,7 +124,7 @@
                 }
             }
             @(y)*@
-        ];
+];
 
 
         @*var neighborhoods = [
@@ -205,28 +199,40 @@
                         map: map
 
                     });
+                //var marker2 = new google.maps.Marker({
+                //    position: { lat: -34.580127, lng: -58.424410 },
 
+                //    animation: google.maps.Animation.DROP,
+                //    map: map
+
+                //});
                    @{
                        string ss = "";
                        int h = 0;
                        foreach (Comercio2 c in comercios)
                        {
                            h++;
-                           ss += " var pos" + h + " = {";
-                           ss += "   lat:" + c.lat.ToString().Replace(",", ".") + ",";
-                           ss += "  lng: " + c.lng.ToString().Replace(",", ".") + "";
-                           ss += "};";
+                           //ss += " var pos" + h + " = {";
+                           //ss += "   lat:" + c.lat.ToString().Replace(",", ".") + ",";
+                           //ss += "  lng: " + c.lng.ToString().Replace(",", ".") + "";
+                           //ss += "};";
 
 
-                           ss += " map.setCenter(pos" + h + ");";
+                           //ss += " map.setCenter(pos" + h + ");";
 
-                           ss += "      var marker" + h + " = new google.maps.Marker({";
-                           ss += "  position: pos" + h + ",";
+                           ss += " var marker" +h+ " = new google.maps.Marker({";
+                           //position: pos,
+                           //{ lat: -34.606903, lng: -58.425693 },
+                           ss += " position: {lat:" + c.lat.ToString().Replace(",", ".") + ",";
 
-                           ss += "  animation: google.maps.Animation.DROP,";
-                           ss += "  map: map";
+                          
+                           ss += "  lng: " + c.lng.ToString().Replace(",", ".") + "},";
 
-                           ss += "   });";
+
+                           ss += " animation: google.maps.Animation.DROP,";
+                           ss += " map: map";
+
+                           ss += " });";
 
                        }
                    }
@@ -236,7 +242,13 @@
 
                        marker.addListener('click', function () {
                            infowindow.open(map, marker);
-                       });
+                    });
+                    marker1.addListener('click', function () {
+                        infowindow.open(map, marker1);
+                    });
+                    marker2.addListener('click', function () {
+                        infowindow.open(map, marker2);
+                    });
 
 
 
@@ -286,23 +298,23 @@
             for (var i = 0; i < neighborhoods.length; i++) {
                 addMarkerWithTimeout(neighborhoods[i], i * 200);
             }
-            var marker2 = new google.maps.Marker({
-                position: { lat: -34.580127, lng: -58.424410 },
+            //var marker2 = new google.maps.Marker({
+            //    position: { lat: -34.580127, lng: -58.424410 },
 
-                animation: google.maps.Animation.DROP,
-                map: map
+            //    animation: google.maps.Animation.DROP,
+            //    map: map
 
-            });
+            //});
 
-            marker2.addListener('click', toggleBounce2);
-            function toggleBounce2() {
-                if (marker2.getAnimation() !== null) {
-                    marker2.setAnimation(null);
-                }
-                else {
-                    marker2.setAnimation(google.maps.Animation.BOUNCE);
-                }
-            }
+            //marker2.addListener('click', toggleBounce2);
+            //function toggleBounce2() {
+            //    if (marker2.getAnimation() !== null) {
+            //        marker2.setAnimation(null);
+            //    }
+            //    else {
+            //        marker2.setAnimation(google.maps.Animation.BOUNCE);
+            //    }
+            //}
         }
 
 
