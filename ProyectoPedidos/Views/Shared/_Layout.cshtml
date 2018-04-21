@@ -290,17 +290,17 @@ var neighborhoods = [
         '</p>' +
         '</div>' +
         '</div>';
-    //var coordenadas = [
+    var coordenadas = [
 
-    //{ lat: -34.596962, lng: -58.588046 },
-    //    { lat: -34.602353, lng: -58.556285 },
-    //    { lat: -34.623714, lng: -58.592216 },
-    //    { lat: -34.591549, lng: -58.629244 },
-    //{ lat: , lng:  },
-    //{ lat: , lng:  },
-    //{ lat: , lng:  },
-    //{ lat: , lng:  }
-    //];
+    { lat: -34.596962, lng: -58.588046 },
+    { lat: -34.602353, lng: -58.556285 },
+    { lat: -34.623714, lng: -58.592216 },
+    { lat: -34.591549, lng: -58.629244 },
+    { lat: -34.578237, lng: -58.405227 },
+    { lat: -34.603645, lng: -58.403249 },
+    { lat: -34.615061, lng: -58.426645 },
+    { lat: -34.600711, lng: -58.457665 }
+    ];
 
     //var marker = [];
     //var infowindow = [];
@@ -308,20 +308,44 @@ var neighborhoods = [
     ////  markers[i].setMap(map);
     function drop() {
 
+      @{
+          string pp = "";
+          int z = 0;
+          for (var k = 0; k < 8; k++)
+          {
+              z++;
+              pp += "    var marker" +z+ " = new google.maps.Marker({";
+              pp += " position: coordenadas["+z+"],";
+              pp += " animation: google.maps.Animation.DROP,";
+              pp += " map: map";
+              pp += "});";
+              pp += " markers.push(marker" +z+ ");";
+              pp += " var infowindow" +z+ " = new google.maps.InfoWindow({";
+              pp += "   content: contentString" +z+ ",";
+              pp += "   maxWidth: 200";
+              pp += "});";
+              pp += "marker" +z+ ".addListener('click' , function(){";
+              pp += "        infowindow" +z+ ".open(map, marker" +z+ ");";
+              pp += "});";
+
+              }
+          }
+       @(pp)
+
         //for (var i = 0; i < coordenadas.length; i++) {
 
-        //    var marker = marker[i] = new google.maps.Marker({
+        //    var [i].ToString() = new google.maps.Marker({
         //        position: { lat: -34.596962, lng: -58.588046 },
         //        animation: google.maps.Animation.DROP,
         //        map: map
         //    });
-        //    markers.push(marker[i]);
+        //    markers.push([i].ToString());
         //    var inforwindow = infowindow[i] = new google.maps.InfoWindow({
         //        content: contentString = contentString[i],
         //        maxWidth: 200
         //    });
-        //    marker[i].addListener('click', function () {
-        //        infowindow1.open(map, marker[i]);
+        //    [i].ToString().addListener('click', function () {
+        //        infowindow1.open(map, [i].ToString());
         //    });
 
         //}
@@ -329,120 +353,120 @@ var neighborhoods = [
  
         
 
-//marker1
-        var marker1 = new google.maps.Marker({
-            position: { lat: -34.596962, lng: -58.588046 },
-            animation: google.maps.Animation.DROP,
-            map: map
-        });
-        markers.push(marker1);                                 
-        var infowindow1 = new google.maps.InfoWindow({
-            content: contentString1,
-            maxWidth: 200
-        });
-        marker1.addListener('click', function () {
-            infowindow1.open(map, marker1);
-        });
-//marker2
-        var marker2 = new google.maps.Marker({
-            position: { lat: -34.602353, lng: -58.556285 },
-            animation: google.maps.Animation.DROP,
-            map: map
-        });
-        markers.push(marker2);                                   
-        var infowindow2 = new google.maps.InfoWindow({
-            content: contentString2,
-            maxWidth: 200
-        });
-        marker2.addListener('click', function () {
-            infowindow2.open(map, marker2);
-        });
-//marker3
-        var marker3 = new google.maps.Marker({
-            position: { lat: -34.623714, lng: -58.592216 },
-            animation: google.maps.Animation.DROP,
-            map: map
-        });
-        markers.push(marker3);
-        var infowindow3 = new google.maps.InfoWindow({
-            content: contentString3,
-            maxWidth: 200
-        });
-        marker3.addListener('click', function () {
-            infowindow3.open(map, marker3);
-        });
-//marker4
-        var marker4 = new google.maps.Marker({
-            position: { lat: -34.591549, lng: -58.629244 },
-            animation: google.maps.Animation.DROP,
-            map: map
-        });
-        markers.push(marker4);
-        var infowindow4 = new google.maps.InfoWindow({
-            content: contentString4,
-            maxWidth: 200
-        });
-        marker4.addListener('click', function () {
-            infowindow4.open(map, marker4);
-        });
-//marker5
-        var marker5 = new google.maps.Marker({
-            position: { lat: -34.578237, lng: -58.405227 },
-            animation: google.maps.Animation.DROP,
-            map: map
-        });
-        markers.push(marker5);
-        var infowindow1 = new google.maps.InfoWindow({
-            content: contentString1,
-            maxWidth: 200
-        });
-        marker5.addListener('click', function () {
-            infowindow1.open(map, marker5);
-        });
-        //marker6
-        var marker6 = new google.maps.Marker({
-            position: { lat: -34.603645, lng: -58.403249 },
-            animation: google.maps.Animation.DROP,
-            map: map
-        });
-        markers.push(marker6);
-        var infowindow2 = new google.maps.InfoWindow({
-            content: contentString2,
-            maxWidth: 200
-        });
-        marker6.addListener('click', function () {
-            infowindow2.open(map, marker6);
-        });
-        //marker7
-        var marker7 = new google.maps.Marker({
-            position: { lat: -34.615061, lng: -58.426645 },
-            animation: google.maps.Animation.DROP,
-            map: map
-        });
-        markers.push(marker7);
-        var infowindow3 = new google.maps.InfoWindow({
-            content: contentString3,
-            maxWidth: 200
-        });
-        marker7.addListener('click', function () {
-            infowindow3.open(map, marker7);
-        });
-        //marker8
-        var marker8 = new google.maps.Marker({
-            position: { lat: -34.600711, lng: -58.457665 },
-            animation: google.maps.Animation.DROP,
-            map: map
-        });
-        markers.push(marker8);
-        var infowindow4 = new google.maps.InfoWindow({
-            content: contentString4,
-            maxWidth: 200
-        });
-        marker8.addListener('click', function () {
-            infowindow4.open(map, marker8);
-        });
-       
-
+            ////marker1
+            //var marker1 = new google.maps.Marker({
+            //    position: { lat: -34.596962, lng: -58.588046 },
+            //    animation: google.maps.Animation.DROP,
+            //    map: map
+            //});
+            //markers.push(marker1);
+            //var infowindow1 = new google.maps.InfoWindow({
+            //    content: contentString1,
+            //    maxWidth: 200
+            //});
+            //marker1.addListener('click', function () {
+            //    infowindow1.open(map, marker1);
+            //});
+            ////marker2
+            //var marker2 = new google.maps.Marker({
+            //    position: { lat: -34.602353, lng: -58.556285 },
+            //    animation: google.maps.Animation.DROP,
+            //    map: map
+            //});
+            //markers.push(marker2);
+            //var infowindow2 = new google.maps.InfoWindow({
+            //    content: contentString2,
+            //    maxWidth: 200
+            //});
+            //marker2.addListener('click', function () {
+            //    infowindow2.open(map, marker2);
+            //});
+            ////marker3
+            //var marker3 = new google.maps.Marker({
+            //    position: { lat: -34.623714, lng: -58.592216 },
+            //    animation: google.maps.Animation.DROP,
+            //    map: map
+            //});
+            //markers.push(marker3);
+            //var infowindow3 = new google.maps.InfoWindow({
+            //    content: contentString3,
+            //    maxWidth: 200
+            //});
+            //marker3.addListener('click', function () {
+            //    infowindow3.open(map, marker3);
+            //});
+            ////marker4
+            //var marker4 = new google.maps.Marker({
+            //    position: { lat: -34.591549, lng: -58.629244 },
+            //    animation: google.maps.Animation.DROP,
+            //    map: map
+            //});
+            //markers.push(marker4);
+            //var infowindow4 = new google.maps.InfoWindow({
+            //    content: contentString4,
+            //    maxWidth: 200
+            //});
+            //marker4.addListener('click', function () {
+            //    infowindow4.open(map, marker4);
+            //});
+            ////marker5
+            //var marker5 = new google.maps.Marker({
+            //    position: { lat: -34.578237, lng: -58.405227 },
+            //    animation: google.maps.Animation.DROP,
+            //    map: map
+            //});
+            //markers.push(marker5);
+            //var infowindow1 = new google.maps.InfoWindow({
+            //    content: contentString1,
+            //    maxWidth: 200
+            //});
+            //marker5.addListener('click', function () {
+            //    infowindow1.open(map, marker5);
+            //});
+            ////marker6
+            //var marker6 = new google.maps.Marker({
+            //    position: { lat: -34.603645, lng: -58.403249 },
+            //    animation: google.maps.Animation.DROP,
+            //    map: map
+            //});
+            //markers.push(marker6);
+            //var infowindow2 = new google.maps.InfoWindow({
+            //    content: contentString2,
+            //    maxWidth: 200
+            //});
+            //marker6.addListener('click', function () {
+            //    infowindow2.open(map, marker6);
+            //});
+            ////marker7
+            //var marker7 = new google.maps.Marker({
+            //    position: { lat: -34.615061, lng: -58.426645 },
+            //    animation: google.maps.Animation.DROP,
+            //    map: map
+            //});
+            //markers.push(marker7);
+            //var infowindow3 = new google.maps.InfoWindow({
+            //    content: contentString3,
+            //    maxWidth: 200
+            //});
+            //marker7.addListener('click', function () {
+            //    infowindow3.open(map, marker7);
+            //});
+            ////marker8
+            //var marker8 = new google.maps.Marker({
+            //    position: { lat: -34.600711, lng: -58.457665 },
+            //    animation: google.maps.Animation.DROP,
+            //    map: map
+            //});
+            //markers.push(marker8);
+            //var infowindow4 = new google.maps.InfoWindow({
+            //    content: contentString4,
+            //    maxWidth: 200
+            //});
+            //marker8.addListener('click', function () {
+            //    infowindow4.open(map, marker8);
+            //});
+            
+        
            // clearMarkers();
           //  comercios();
             //for (var i = 0; i < neighborhoods.length; i++) {
@@ -530,9 +554,7 @@ var neighborhoods = [
                            ss += " map: map";
 
                            ss += " });";
-
                        }
-
                    }
             @(ss)
 
