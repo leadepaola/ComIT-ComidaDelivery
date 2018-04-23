@@ -82,7 +82,7 @@
   
 
 
-<script>
+    <script>
 // If you're adding a number of markers, you may want to drop them on the map
 // consecutively rather than all at once. This example shows how to use
 // window.setTimeout() to space your markers' animation.
@@ -149,7 +149,7 @@ var neighborhoods = [
 
 
 
-   
+
         function initMap() {
 
 
@@ -159,10 +159,10 @@ var neighborhoods = [
             });
 
            // var infoWindow = new google.maps.InfoWindow({ map: map });
-            
 
 
-            
+
+
 
 
 
@@ -186,8 +186,8 @@ var neighborhoods = [
                        // animation: google.maps.Animation.DROP,
                         animation: google.maps.Animation.BOUNCE,
                         map: map
-                    });           
-                
+                    });
+
                     //SEGUIR ACÁ
 
                     //var infowindow0 = new google.maps.InfoWindow({
@@ -206,7 +206,7 @@ var neighborhoods = [
                     //    '</div>' +
                     //    '</div>';
                     //marker.addListener('click', function () {
-                    //    infowindow0.open(map, marker);                                               
+                    //    infowindow0.open(map, marker);
                     //});
 
 
@@ -246,7 +246,7 @@ var neighborhoods = [
         }
 
 
-    var contentString1 = '<div id="content">' +
+    var contenido1 = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
         '<h4><b>Las medialunas del abuelo</b></h4>' +
@@ -257,7 +257,7 @@ var neighborhoods = [
         '</p>' +
         '</div>' +
         '</div>';
-    var contentString2 = '<div id="content">' +
+    var contenido2 = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
         '<h4><b>Pizza Garden</b></h4>' +
@@ -268,7 +268,7 @@ var neighborhoods = [
         '</p>' +
         '</div>' +
         '</div>';
-    var contentString3 = '<div id="content">' +
+    var contenido3 = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
         '<h4><b>Café Martinez</b></h4>' +
@@ -279,7 +279,7 @@ var neighborhoods = [
         '</p>' +
         '</div>' +
         '</div>';
-    var contentString4 = '<div id="content">' +
+    var contenido4 = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
         '<h4><b>McDonalds</b></h4>' +
@@ -289,18 +289,87 @@ var neighborhoods = [
         'ingresar</a> ' +
         '</p>' +
         '</div>' +
-        '</div>';
-    var coordenadas = [
+            '</div>';
+        var contenido5 = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>Las medialunas del abuelo</b></h4>' +
+            '<div id="bodyContent">' +
 
+            '<p>Página web: <a href="http://www.lasmedialunasdelabuelo.com">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
+        var contenido6 = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>Pizza Garden</b></h4>' +
+            '<div id="bodyContent">' +
+
+            '<p>Página web: <a href="http://www.pizzagarden.com">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
+        var contenido7 = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>Café Martinez</b></h4>' +
+            '<div id="bodyContent">' +
+
+            '<p>Página web: <a href="https://cafemartinez.com">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
+        var contenido8 = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>McDonalds</b></h4>' +
+            '<div id="bodyContent">' +
+
+            '<p>Página web: <a href="http://www.mcdonalds.com.ar/">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
+
+    var coordenadas = [
+        { lat: -34.615061, lng: -58.426645 },
     { lat: -34.596962, lng: -58.588046 },
     { lat: -34.602353, lng: -58.556285 },
     { lat: -34.623714, lng: -58.592216 },
     { lat: -34.591549, lng: -58.629244 },
     { lat: -34.578237, lng: -58.405227 },
     { lat: -34.603645, lng: -58.403249 },
-    { lat: -34.615061, lng: -58.426645 },
+   
     { lat: -34.600711, lng: -58.457665 }
     ];
+
+    //var marcadores = [
+
+    //    marker1,
+    //    marker2,
+    //    marker3,
+    //    marker4,
+    //    marker5,
+    //    marker6,
+    //    marker7,
+    //    marker8
+    //];
+    //var info = [
+
+    //    infowindow1,
+    //    infowindow2,
+    //    infowindow3,
+    //    infowindow4,
+    //    infowindow5,
+    //    infowindow6,
+    //    infowindow7,
+    //    infowindow8
+
+    //];
 
     //var marker = [];
     //var infowindow = [];
@@ -308,7 +377,7 @@ var neighborhoods = [
     ////  markers[i].setMap(map);
     function drop() {
 
-      @{
+      @*@{
           string pp = "";
           int z = 0;
           for (var k = 0; k < 8; k++)
@@ -324,173 +393,196 @@ var neighborhoods = [
               pp += "   content: contentString" +z+ ",";
               pp += "   maxWidth: 200";
               pp += "});";
-              pp += "marker" +z+ ".addListener('click' , function(){";
+              pp += "marker" +z+ ".addListener("+'\x0027'+" click \x0027 , function(){";
               pp += "        infowindow" +z+ ".open(map, marker" +z+ ");";
               pp += "});";
 
-              }
           }
-       @(pp)
-
-        //for (var i = 0; i < coordenadas.length; i++) {
-
-        //    var [i].ToString() = new google.maps.Marker({
-        //        position: { lat: -34.596962, lng: -58.588046 },
-        //        animation: google.maps.Animation.DROP,
-        //        map: map
-        //    });
-        //    markers.push([i].ToString());
-        //    var inforwindow = infowindow[i] = new google.maps.InfoWindow({
-        //        content: contentString = contentString[i],
-        //        maxWidth: 200
-        //    });
-        //    [i].ToString().addListener('click', function () {
-        //        infowindow1.open(map, [i].ToString());
-        //    });
-
-        //}
-        
- 
-        
-
-            ////marker1
-            //var marker1 = new google.maps.Marker({
-            //    position: { lat: -34.596962, lng: -58.588046 },
-            //    animation: google.maps.Animation.DROP,
-            //    map: map
-            //});
-            //markers.push(marker1);
-            //var infowindow1 = new google.maps.InfoWindow({
-            //    content: contentString1,
-            //    maxWidth: 200
-            //});
-            //marker1.addListener('click', function () {
-            //    infowindow1.open(map, marker1);
-            //});
-            ////marker2
-            //var marker2 = new google.maps.Marker({
-            //    position: { lat: -34.602353, lng: -58.556285 },
-            //    animation: google.maps.Animation.DROP,
-            //    map: map
-            //});
-            //markers.push(marker2);
-            //var infowindow2 = new google.maps.InfoWindow({
-            //    content: contentString2,
-            //    maxWidth: 200
-            //});
-            //marker2.addListener('click', function () {
-            //    infowindow2.open(map, marker2);
-            //});
-            ////marker3
-            //var marker3 = new google.maps.Marker({
-            //    position: { lat: -34.623714, lng: -58.592216 },
-            //    animation: google.maps.Animation.DROP,
-            //    map: map
-            //});
-            //markers.push(marker3);
-            //var infowindow3 = new google.maps.InfoWindow({
-            //    content: contentString3,
-            //    maxWidth: 200
-            //});
-            //marker3.addListener('click', function () {
-            //    infowindow3.open(map, marker3);
-            //});
-            ////marker4
-            //var marker4 = new google.maps.Marker({
-            //    position: { lat: -34.591549, lng: -58.629244 },
-            //    animation: google.maps.Animation.DROP,
-            //    map: map
-            //});
-            //markers.push(marker4);
-            //var infowindow4 = new google.maps.InfoWindow({
-            //    content: contentString4,
-            //    maxWidth: 200
-            //});
-            //marker4.addListener('click', function () {
-            //    infowindow4.open(map, marker4);
-            //});
-            ////marker5
-            //var marker5 = new google.maps.Marker({
-            //    position: { lat: -34.578237, lng: -58.405227 },
-            //    animation: google.maps.Animation.DROP,
-            //    map: map
-            //});
-            //markers.push(marker5);
-            //var infowindow1 = new google.maps.InfoWindow({
-            //    content: contentString1,
-            //    maxWidth: 200
-            //});
-            //marker5.addListener('click', function () {
-            //    infowindow1.open(map, marker5);
-            //});
-            ////marker6
-            //var marker6 = new google.maps.Marker({
-            //    position: { lat: -34.603645, lng: -58.403249 },
-            //    animation: google.maps.Animation.DROP,
-            //    map: map
-            //});
-            //markers.push(marker6);
-            //var infowindow2 = new google.maps.InfoWindow({
-            //    content: contentString2,
-            //    maxWidth: 200
-            //});
-            //marker6.addListener('click', function () {
-            //    infowindow2.open(map, marker6);
-            //});
-            ////marker7
-            //var marker7 = new google.maps.Marker({
-            //    position: { lat: -34.615061, lng: -58.426645 },
-            //    animation: google.maps.Animation.DROP,
-            //    map: map
-            //});
-            //markers.push(marker7);
-            //var infowindow3 = new google.maps.InfoWindow({
-            //    content: contentString3,
-            //    maxWidth: 200
-            //});
-            //marker7.addListener('click', function () {
-            //    infowindow3.open(map, marker7);
-            //});
-            ////marker8
-            //var marker8 = new google.maps.Marker({
-            //    position: { lat: -34.600711, lng: -58.457665 },
-            //    animation: google.maps.Animation.DROP,
-            //    map: map
-            //});
-            //markers.push(marker8);
-            //var infowindow4 = new google.maps.InfoWindow({
-            //    content: contentString4,
-            //    maxWidth: 200
-            //});
-            //marker8.addListener('click', function () {
-            //    infowindow4.open(map, marker8);
-            //});
-            
-        
-           // clearMarkers();
-          //  comercios();
-            //for (var i = 0; i < neighborhoods.length; i++) {
-            //    addMarkerWithTimeout(neighborhoods[i], i * 200);
-            //}
+          }
+        @(pp)*@
 
 
-            //var marker2 = new google.maps.Marker({
-            //    position: { lat: -34.580127, lng: -58.424410 },
 
-            //    animation: google.maps.Animation.DROP,
-            //    map: map
 
-            //});
+                  
+        for (var k = 0; k < 8; k++) {
+                          k++;
+                        
 
-            //marker2.addListener('click', toggleBounce2);
-            //function toggleBounce2() {
-            //    if (marker2.getAnimation() !== null) {
-            //        marker2.setAnimation(null);
-            //    }
-            //    else {
-            //        marker2.setAnimation(google.maps.Animation.BOUNCE);
-            //    }
-            //}
+               @{
+                   string pp = "";
+                   string pp2 = "";
+                   string pp3 = "";
+                   string pp4 = "";
+                   string zz = "";
+                   int z = 0;
+                   z++;
+                   pp +="   var marker" +z+ " ";
+                   pp2 += "marker" +z;
+                   pp3 +="infowindow"+z;
+                   pp4 += "contenido" +z;
+                   zz +=z;
+                                    }
+        @(pp)
+
+                               = new google.maps.Marker({
+                position: coordenadas[k],
+            animation: google.maps.Animation.DROP,
+            map: map
+            });
+                      markers.push( @(pp2)  );
+                      var @(pp3) = new google.maps.InfoWindow({
+                content: @(pp4),
+            maxWidth: 200
+            });
+            @(pp2).addListener('click' , function(){
+                       @(pp3).open(map, @(pp2));
+                   });
+
+        }
+
+
+
+
+
+              ////marker1
+              //var marker1 = new google.maps.Marker({
+              //    position: { lat: -34.596962, lng: -58.588046 },
+              //    animation: google.maps.Animation.DROP,
+              //    map: map
+              //});
+              //markers.push(marker1);
+              //var infowindow1 = new google.maps.InfoWindow({
+              //    content: contentString1,
+              //    maxWidth: 200
+              //});
+              //marker1.addListener('click', function () {
+              //    infowindow1.open(map, marker1);
+              //});
+              ////marker2
+              //var marker2 = new google.maps.Marker({
+              //    position: { lat: -34.602353, lng: -58.556285 },
+              //    animation: google.maps.Animation.DROP,
+              //    map: map
+              //});
+              //markers.push(marker2);
+              //var infowindow2 = new google.maps.InfoWindow({
+              //    content: contentString2,
+              //    maxWidth: 200
+              //});
+              //marker2.addListener('click', function () {
+              //    infowindow2.open(map, marker2);
+              //});
+              ////marker3
+              //var marker3 = new google.maps.Marker({
+              //    position: { lat: -34.623714, lng: -58.592216 },
+              //    animation: google.maps.Animation.DROP,
+              //    map: map
+              //});
+              //markers.push(marker3);
+              //var infowindow3 = new google.maps.InfoWindow({
+              //    content: contentString3,
+              //    maxWidth: 200
+              //});
+              //marker3.addListener('click', function () {
+              //    infowindow3.open(map, marker3);
+              //});
+              ////marker4
+              //var marker4 = new google.maps.Marker({
+              //    position: { lat: -34.591549, lng: -58.629244 },
+              //    animation: google.maps.Animation.DROP,
+              //    map: map
+              //});
+              //markers.push(marker4);
+              //var infowindow4 = new google.maps.InfoWindow({
+              //    content: contentString4,
+              //    maxWidth: 200
+              //});
+              //marker4.addListener('click', function () {
+              //    infowindow4.open(map, marker4);
+              //});
+              ////marker5
+              //var marker5 = new google.maps.Marker({
+              //    position: { lat: -34.578237, lng: -58.405227 },
+              //    animation: google.maps.Animation.DROP,
+              //    map: map
+              //});
+              //markers.push(marker5);
+              //var infowindow1 = new google.maps.InfoWindow({
+              //    content: contentString1,
+              //    maxWidth: 200
+              //});
+              //marker5.addListener('click', function () {
+              //    infowindow1.open(map, marker5);
+              //});
+              ////marker6
+              //var marker6 = new google.maps.Marker({
+              //    position: { lat: -34.603645, lng: -58.403249 },
+              //    animation: google.maps.Animation.DROP,
+              //    map: map
+              //});
+              //markers.push(marker6);
+              //var infowindow2 = new google.maps.InfoWindow({
+              //    content: contentString2,
+              //    maxWidth: 200
+              //});
+              //marker6.addListener('click', function () {
+              //    infowindow2.open(map, marker6);
+              //});
+              ////marker7
+              //var marker7 = new google.maps.Marker({
+              //    position: { lat: -34.615061, lng: -58.426645 },
+              //    animation: google.maps.Animation.DROP,
+              //    map: map
+              //});
+              //markers.push(marker7);
+              //var infowindow3 = new google.maps.InfoWindow({
+              //    content: contentString3,
+              //    maxWidth: 200
+              //});
+              //marker7.addListener('click', function () {
+              //    infowindow3.open(map, marker7);
+              //});
+              ////marker8
+              //var marker8 = new google.maps.Marker({
+              //    position: { lat: -34.600711, lng: -58.457665 },
+              //    animation: google.maps.Animation.DROP,
+              //    map: map
+              //});
+              //markers.push(marker8);
+              //var infowindow4 = new google.maps.InfoWindow({
+              //    content: contentString4,
+              //    maxWidth: 200
+              //});
+              //marker8.addListener('click', function () {
+              //    infowindow4.open(map, marker8);
+              //});
+
+
+              // clearMarkers();
+              //  comercios();
+              //for (var i = 0; i < neighborhoods.length; i++) {
+              //    addMarkerWithTimeout(neighborhoods[i], i * 200);
+              //}
+
+
+              //var marker2 = new google.maps.Marker({
+              //    position: { lat: -34.580127, lng: -58.424410 },
+
+              //    animation: google.maps.Animation.DROP,
+              //    map: map
+
+              //});
+
+              //marker2.addListener('click', toggleBounce2);
+              //function toggleBounce2() {
+              //    if (marker2.getAnimation() !== null) {
+              //        marker2.setAnimation(null);
+              //    }
+              //    else {
+              //        marker2.setAnimation(google.maps.Animation.BOUNCE);
+              //    }
+              //}
     }
 
 
@@ -524,7 +616,7 @@ var neighborhoods = [
         }
 
 
-       
+
 
     function comercios() {
                    @{
@@ -558,7 +650,7 @@ var neighborhoods = [
                    }
             @(ss)
 
-  
+
 
 
     }
