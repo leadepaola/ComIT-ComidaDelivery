@@ -190,23 +190,13 @@ var neighborhoods = [
                 'Error: Your browser doesn\'t support geolocation.');
         }
 
+        //DESAYUNO-MERIENDA
     var contenido1 = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
         '<h4><b>Las medialunas del abuelo</b></h4>' +
         '<div id="bodyContent">' +
-        '<p>Página web: <a href="http://www.lasmedialunasdelabuelo.com">' +
-        'ingresar</a> ' +
-        '</p>' +
-        '</div>' +
-        '</div>';
-    var contenido2 = '<div id="content">' +
-        '<div id="siteNotice">' +
-        '</div>' +
-        '<h4><b>Pizza Garden</b></h4>' +
-        '<div id="bodyContent">' +
-
-        '<p>Página web: <a href="http://www.pizzagarden.com">' +
+        '<p>Sitio web: <a href="http://www.lasmedialunasdelabuelo.com">' +
         'ingresar</a> ' +
         '</p>' +
         '</div>' +
@@ -216,75 +206,69 @@ var neighborhoods = [
         '</div>' +
         '<h4><b>Café Martinez</b></h4>' +
         '<div id="bodyContent">' +
-
-        '<p>Página web: <a href="https://cafemartinez.com">' +
+        '<p>Sitio web: <a href="https://cafemartinez.com">' +
         'ingresar</a> ' +
         '</p>' +
         '</div>' +
         '</div>';
-    var contenido4 = '<div id="content">' +
-        '<div id="siteNotice">' +
-        '</div>' +
-        '<h4><b>McDonalds</b></h4>' +
-        '<div id="bodyContent">' +
-
-        '<p>Página web: <a href="http://www.mcdonalds.com.ar/">' +
-        'ingresar</a> ' +
-        '</p>' +
-        '</div>' +
-            '</div>';
-        var contenido5 = '<div id="content">' +
+         var contenido9 = '<div id="content">' +
             '<div id="siteNotice">' +
             '</div>' +
-            '<h4><b>Las medialunas del abuelo</b></h4>' +
+            '<h4><b>Bonafide</b></h4>' +
             '<div id="bodyContent">' +
-
-            '<p>Página web: <a href="http://www.lasmedialunasdelabuelo.com">' +
+            '<p>Sitio web: <a href="http://www.bonafide.com.ar/">' +
             'ingresar</a> ' +
             '</p>' +
             '</div>' +
             '</div>';
-        var contenido6 = '<div id="content">' +
+        var contenido10 = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>Havana</b></h4>' +
+            '<div id="bodyContent">' +
+            '<p>Sitio web: <a href="http://www.havanna.com.ar/">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
+        var contenido11 = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>Starbucks</b></h4>' +
+            '<div id="bodyContent">' +
+            '<p>Sitio web: <a href="http://www.starbucks.com.ar/">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
+        //ALMUERZO-CENA
+        var contenido2 = '<div id="content">' +
             '<div id="siteNotice">' +
             '</div>' +
             '<h4><b>Pizza Garden</b></h4>' +
-            '<div id="bodyContent">' +
-
-            '<p>Página web: <a href="http://www.pizzagarden.com">' +
+            '<div id="bodyContent">' +      
+            '<p>Sitio web: <a href="http://www.pizzagarden.com">' +
             'ingresar</a> ' +
             '</p>' +
             '</div>' +
             '</div>';
-        var contenido7 = '<div id="content">' +
-            '<div id="siteNotice">' +
-            '</div>' +
-            '<h4><b>Café Martinez</b></h4>' +
-            '<div id="bodyContent">' +
-
-            '<p>Página web: <a href="https://cafemartinez.com">' +
-            'ingresar</a> ' +
-            '</p>' +
-            '</div>' +
-            '</div>';
-        var contenido8 = '<div id="content">' +
+        var contenido4 = '<div id="content">' +
             '<div id="siteNotice">' +
             '</div>' +
             '<h4><b>McDonalds</b></h4>' +
             '<div id="bodyContent">' +
-
-            '<p>Página web: <a href="http://www.mcdonalds.com.ar/">' +
+            '<p>Sitio web: <a href="http://www.mcdonalds.com.ar/">' +
             'ingresar</a> ' +
             '</p>' +
             '</div>' +
             '</div>';
 
- 
     var markersDesayuno = [];  
     function dropDesayuno(){
-        //marker1
+        //marker1 - medialunas del abuelo - north caba
         setTimeout(function () {
         var marker1 = new google.maps.Marker({
-            position: { lat: -34.596962, lng: -58.588046 },
+            position: { lat: -34.553106, lng: -58.464501 },
             animation: google.maps.Animation.DROP,
             map: map
         });
@@ -296,39 +280,39 @@ var neighborhoods = [
         marker1.addListener('click', function () {
             infowindow1.open(map, marker1);
         });
-        }, 100);
-        //marker5
+        }, 50);
+        //marker5 - medialunas del abuelo - south caba
         setTimeout(function () {
-        var marker5 = new google.maps.Marker({
-            position: { lat: -34.578237, lng: -58.405227 },
-            animation: google.maps.Animation.DROP,
-            map: map
-        });
-        markersDesayuno.push(marker5);
-        var infowindow1 = new google.maps.InfoWindow({
-            content: contenido1,
-            maxWidth: 200
-        });
-        marker5.addListener('click', function () {
-            infowindow1.open(map, marker5);
-        });
+            var marker5 = new google.maps.Marker({
+                position: { lat: -34.578237, lng: -58.405227 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersDesayuno.push(marker5);
+            var infowindow1 = new google.maps.InfoWindow({
+                content: contenido1,
+                maxWidth: 200
+            });
+            marker5.addListener('click', function () {
+                infowindow1.open(map, marker5);
+            });
         }, 200);
-        //marker3
+        //marker3 - las medialunas del abuelo
         setTimeout(function () {
         var marker3 = new google.maps.Marker({
-            position: { lat: -34.623714, lng: -58.592216 },
+            position: { lat: -34.619908, lng: -58.477728 },
             animation: google.maps.Animation.DROP,
             map: map
         });
         markersDesayuno.push(marker3);
         var infowindow3 = new google.maps.InfoWindow({
-            content: contenido3,
+            content: contenido1,
             maxWidth: 200
         });
         marker3.addListener('click', function () {
             infowindow3.open(map, marker3);
         });
-        }, 300);
+        }, 350);
         //marker7
         setTimeout(function () {
         var marker7 = new google.maps.Marker({
@@ -344,9 +328,135 @@ var neighborhoods = [
         marker7.addListener('click', function () {
             infowindow3.open(map, marker7);
         });
-        }, 400);
-
-
+        }, 500);
+        //marker9 - BONAFIDE - colegiales
+        setTimeout(function () {
+        var marker9 = new google.maps.Marker({
+            position: { lat: -34.577252, lng: -58.451370 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersDesayuno.push(marker9);
+        var infowindow9 = new google.maps.InfoWindow({
+            content: contenido9,
+            maxWidth: 200
+        });
+        marker9.addListener('click', function () {
+            infowindow9.open(map, marker9);
+        });
+        }, 650);
+        //marker10 - STARBUCKS - villa crespo
+        setTimeout(function () {
+        var marker9 = new google.maps.Marker({
+            position: { lat: -34.599445, lng: -58.450058 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersDesayuno.push(marker9);
+        var infowindow9 = new google.maps.InfoWindow({
+            content: contenido11,
+            maxWidth: 200
+        });
+        marker9.addListener('click', function () {
+            infowindow9.open(map, marker9);
+        });
+        }, 800);
+        //marker11 - cafe martinez - caba 1
+        setTimeout(function () {
+        var marker9 = new google.maps.Marker({
+            position: { lat: -34.609762, lng: -58.491384 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersDesayuno.push(marker9);
+        var infowindow9 = new google.maps.InfoWindow({
+            content: contenido3,
+            maxWidth: 200
+        });
+        marker9.addListener('click', function () {
+            infowindow9.open(map, marker9);
+        });
+        }, 950);
+        //marker11 - havana - caba 9
+        setTimeout(function () {
+        var marker9 = new google.maps.Marker({
+            position: { lat: -34.604057, lng: -58.397332 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersDesayuno.push(marker9);
+        var infowindow9 = new google.maps.InfoWindow({
+            content: contenido10,
+            maxWidth: 200
+        });
+        marker9.addListener('click', function () {
+            infowindow9.open(map, marker9);
+        });
+        }, 1100);
+        //marker12 - havana - caba 2 
+        setTimeout(function () {
+        var marker9 = new google.maps.Marker({
+            position: { lat: -34.601793, lng: -58.511533 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersDesayuno.push(marker9);
+        var infowindow9 = new google.maps.InfoWindow({
+            content: contenido10,
+            maxWidth: 200
+        });
+        marker9.addListener('click', function () {
+            infowindow9.open(map, marker9);
+        });
+        }, 1250);
+        //marker11 - cafe martinez - parque sarmiento
+        setTimeout(function () {
+        var marker9 = new google.maps.Marker({
+            position: { lat: -34.571364, lng: -58.490609 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersDesayuno.push(marker9);
+        var infowindow9 = new google.maps.InfoWindow({
+            content: contenido3,
+            maxWidth: 200
+        });
+        marker9.addListener('click', function () {
+            infowindow9.open(map, marker9);
+        });
+        }, 1400);
+        //marker13 - Bonafide - puerto madero
+        setTimeout(function () {
+        var marker9 = new google.maps.Marker({
+            position: { lat: -34.610326, lng: -58.379335 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersDesayuno.push(marker9);
+        var infowindow9 = new google.maps.InfoWindow({
+            content: contenido9,
+            maxWidth: 200
+        });
+        marker9.addListener('click', function () {
+            infowindow9.open(map, marker9);
+        });
+        }, 1550);
+        //marker11 - starbucks - parque chas
+        setTimeout(function () {
+            var marker9 = new google.maps.Marker({
+                position: { lat: -34.581117, lng: -58.481806 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersDesayuno.push(marker9);
+            var infowindow9 = new google.maps.InfoWindow({
+                content: contenido11,
+                maxWidth: 200
+            });
+            marker9.addListener('click', function () {
+                infowindow9.open(map, marker9);
+            });
+        }, 1700);
     }
     function limpiarDesayuno(map) {
         for (var i = 0; i < markersDesayuno.length; i++) {
@@ -446,19 +556,8 @@ var neighborhoods = [
     function limpiar() {
         setMapOnAll(null);
     }
-   
-
-        function addMarkerWithTimeout(position, timeout) {
-            window.setTimeout(function () {
-                markersDesayuno.push(new google.maps.Marker({
-                    position: position,
-                    map: map,
-                    animation: google.maps.Animation.DROP
-                }));
-            }, timeout);
-        }
-
-        function clearMarkers() {
+ 
+    function clearMarkers() {
             for (var i = 0; i < markers.length; i++) {
                 markers[i].setMap(null);
             }
@@ -496,6 +595,7 @@ var neighborhoods = [
                        }
                    }
             @(ss)
+        //2
     }
 
 
@@ -525,11 +625,11 @@ var neighborhoods = [
 
             <a id="a" href=""><li id="li">COMIDA</li></a>
             <form>
-                <input type="checkbox" name="desayuno" id="desayuno"
+                <input type="checkbox" name="desayuno" class="checkbox-lateral" id="desayuno"
                        onClick="if(this.checked == true){dropDesayuno()} else{limpiarDesayuno()}">
                 <label id="boton" for="desayuno">Desayuno/ Merienda</label>  <br> <br>
 
-                <input type="checkbox" name="almuerzo" id="almuerzo"
+                <input type="checkbox" name="almuerzo" class="checkbox-lateral" id="almuerzo"
                        onClick="if(this.checked == true){dropAlmuerzo()} else{limpiarAlmuerzo()}">
                 <label id="boton" for="almuerzo">almuerzo/ Cena</label>   <br><br>
 
