@@ -38,7 +38,10 @@
         </nav>
     </header>
 
+
+    
     <script>
+        //lOGO ANIMACION
         $(document).ready(function () {
 
 
@@ -79,13 +82,10 @@
         List<Comercio2> comercios2 = ViewBag.comercios2;
         string y = "";
     }
-  
+
 
 
     <script>
-// If you're adding a number of markers, you may want to drop them on the map
-// consecutively rather than all at once. This example shows how to use
-// window.setTimeout() to space your markers' animation.
 
 var neighborhoods = [
 
@@ -106,13 +106,12 @@ var neighborhoods = [
     }
     @(s)
 
-
         @*
-            @{
-                foreach (Comercio2 c in comercios)
-                {
-                    s += "{ lat:" + c.lat.ToString().Replace(",",".") + ", lng:" + c.lng.ToString().Replace(",", ".") + "}";
-                }
+       @{
+           foreach (Comercio2 c in comercios)
+       {
+           s += "{ lat:" + c.lat.ToString().Replace(",",".") + ", lng:" + c.lng.ToString().Replace(",", ".") + "}";
+       }
 
             }
             @(s),
@@ -127,31 +126,11 @@ var neighborhoods = [
 ];
 
 
-        @*var neighborhoods = [
-
-            { lat: -34.590757, lng: @comercios. },
-            { lat: -34.606903, lng: -58.425693 },
-            { lat: -34.579161, lng: -58.452015 },
-            { lat: -34.566954, lng: -58.434647 },
-            { lat: -34.599523, lng: -58.382782 },
-            { lat: -34.601839, lng: -58.592444 },
-            { lat: -34.601977, lng: -58.572721 },
-            { lat: -34.613118, lng: -58.362982 },
-            { lat: -34.589040, lng: -58.447594 },
-            { lat: -34.580127, lng: -58.424410 }
-        ];*@
-
         var markers = [];
         var map;
-
         @ViewBag.Localizaciones
 
-
-
-
-
         function initMap() {
-
 
             map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 13,
@@ -159,12 +138,6 @@ var neighborhoods = [
             });
 
            // var infoWindow = new google.maps.InfoWindow({ map: map });
-
-
-
-
-
-
 
 
             // Try HTML5 geolocation.
@@ -175,11 +148,7 @@ var neighborhoods = [
                         lng: position.coords.longitude
                     };
 
-
                     map.setCenter(pos);
-
-
-
 
                     var marker = new google.maps.Marker({
                         position: pos,
@@ -188,31 +157,7 @@ var neighborhoods = [
                         map: map
                     });
 
-                    //SEGUIR ACÁ
-
-                    //var infowindow0 = new google.maps.InfoWindow({
-                    //    content: contentString0,
-                    //    maxWidth: 200
-                    //});
-                    //var contentString0 = '<div id="content">' +
-                    //    '<div id="siteNotice">' +
-                    //    '</div>' +
-                    //    '<h4><b>Las medialunas del abuelo</b></h4>' +
-                    //    '<div id="bodyContent">' +
-
-                    //    '<p>Página web: <a href="http://www.lasmedialunasdelabuelo.com">' +
-                    //    'ingresar</a> ' +
-                    //    '</p>' +
-                    //    '</div>' +
-                    //    '</div>';
-                    //marker.addListener('click', function () {
-                    //    infowindow0.open(map, marker);
-                    //});
-
-
-
-
-
+              
                      // marker.addListener('click', toggleBounce);
 
                     function toggleBounce() {
@@ -226,9 +171,9 @@ var neighborhoods = [
 
                 },
 
-                    function () {
-                        handleLocationError(true, infoWindow, map.getCenter());
-                    });
+                function () {
+                   handleLocationError(true, infoWindow, map.getCenter());
+                });
 
             }
             else {
@@ -245,13 +190,11 @@ var neighborhoods = [
                 'Error: Your browser doesn\'t support geolocation.');
         }
 
-
     var contenido1 = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
         '<h4><b>Las medialunas del abuelo</b></h4>' +
         '<div id="bodyContent">' +
-
         '<p>Página web: <a href="http://www.lasmedialunasdelabuelo.com">' +
         'ingresar</a> ' +
         '</p>' +
@@ -335,256 +278,163 @@ var neighborhoods = [
             '</div>' +
             '</div>';
 
-    var coordenadas = [
-        { lat: -34.615061, lng: -58.426645 },
-    { lat: -34.596962, lng: -58.588046 },
-    { lat: -34.602353, lng: -58.556285 },
-    { lat: -34.623714, lng: -58.592216 },
-    { lat: -34.591549, lng: -58.629244 },
-    { lat: -34.578237, lng: -58.405227 },
-    { lat: -34.603645, lng: -58.403249 },
-   
-    { lat: -34.600711, lng: -58.457665 }
-    ];
-
-    //var marcadores = [
-
-    //    marker1,
-    //    marker2,
-    //    marker3,
-    //    marker4,
-    //    marker5,
-    //    marker6,
-    //    marker7,
-    //    marker8
-    //];
-    //var info = [
-
-    //    infowindow1,
-    //    infowindow2,
-    //    infowindow3,
-    //    infowindow4,
-    //    infowindow5,
-    //    infowindow6,
-    //    infowindow7,
-    //    infowindow8
-
-    //];
-
-    //var marker = [];
-    //var infowindow = [];
-    //var contentString = [];
-    ////  markers[i].setMap(map);
-    function drop() {
-
-      @*@{
-          string pp = "";
-          int z = 0;
-          for (var k = 0; k < 8; k++)
-          {
-              z++;
-              pp += "    var marker" +z+ " = new google.maps.Marker({";
-              pp += " position: coordenadas["+z+"],";
-              pp += " animation: google.maps.Animation.DROP,";
-              pp += " map: map";
-              pp += "});";
-              pp += " markers.push(marker" +z+ ");";
-              pp += " var infowindow" +z+ " = new google.maps.InfoWindow({";
-              pp += "   content: contentString" +z+ ",";
-              pp += "   maxWidth: 200";
-              pp += "});";
-              pp += "marker" +z+ ".addListener("+'\x0027'+" click \x0027 , function(){";
-              pp += "        infowindow" +z+ ".open(map, marker" +z+ ");";
-              pp += "});";
-
-          }
-          }
-        @(pp)*@
-
-
-
-
-                  
-        for (var k = 0; k < 8; k++) {
-                          k++;
-                        
-
-               @{
-                   string pp = "";
-                   string pp2 = "";
-                   string pp3 = "";
-                   string pp4 = "";
-                   string zz = "";
-                   int z = 0;
-                   z++;
-                   pp +="   var marker" +z+ " ";
-                   pp2 += "marker" +z;
-                   pp3 +="infowindow"+z;
-                   pp4 += "contenido" +z;
-                   zz +=z;
-                                    }
-        @(pp)
-
-                               = new google.maps.Marker({
-                position: coordenadas[k],
+ 
+    var markersDesayuno = [];  
+    function dropDesayuno(){
+        //marker1
+        setTimeout(function () {
+        var marker1 = new google.maps.Marker({
+            position: { lat: -34.596962, lng: -58.588046 },
             animation: google.maps.Animation.DROP,
             map: map
-            });
-                      markers.push( @(pp2)  );
-                      var @(pp3) = new google.maps.InfoWindow({
-                content: @(pp4),
+        });
+        markersDesayuno.push(marker1);
+        var infowindow1 = new google.maps.InfoWindow({
+            content: contenido1,
             maxWidth: 200
-            });
-            @(pp2).addListener('click' , function(){
-                       @(pp3).open(map, @(pp2));
-                   });
+        });
+        marker1.addListener('click', function () {
+            infowindow1.open(map, marker1);
+        });
+        }, 100);
+        //marker5
+        setTimeout(function () {
+        var marker5 = new google.maps.Marker({
+            position: { lat: -34.578237, lng: -58.405227 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersDesayuno.push(marker5);
+        var infowindow1 = new google.maps.InfoWindow({
+            content: contenido1,
+            maxWidth: 200
+        });
+        marker5.addListener('click', function () {
+            infowindow1.open(map, marker5);
+        });
+        }, 200);
+        //marker3
+        setTimeout(function () {
+        var marker3 = new google.maps.Marker({
+            position: { lat: -34.623714, lng: -58.592216 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersDesayuno.push(marker3);
+        var infowindow3 = new google.maps.InfoWindow({
+            content: contenido3,
+            maxWidth: 200
+        });
+        marker3.addListener('click', function () {
+            infowindow3.open(map, marker3);
+        });
+        }, 300);
+        //marker7
+        setTimeout(function () {
+        var marker7 = new google.maps.Marker({
+            position: { lat: -34.615061, lng: -58.426645 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersDesayuno.push(marker7);
+        var infowindow3 = new google.maps.InfoWindow({
+            content: contenido3,
+            maxWidth: 200
+        });
+        marker7.addListener('click', function () {
+            infowindow3.open(map, marker7);
+        });
+        }, 400);
 
+
+    }
+    function limpiarDesayuno(map) {
+        for (var i = 0; i < markersDesayuno.length; i++) {
+            markersDesayuno[i].setMap(map);
         }
+    } 
+
+    var markersAlmuerzo = [];
+    function dropAlmuerzo(){
+        //marker2
+        setTimeout(function () { 
+        var marker2 = new google.maps.Marker({
+            position: { lat: -34.602353, lng: -58.556285 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersAlmuerzo.push(marker2);
+        var infowindow2 = new google.maps.InfoWindow({
+            content: contenido2,
+            maxWidth: 200
+        });
+        marker2.addListener('click', function () {
+            infowindow2.open(map, marker2);
+        });
+        }, 100);
+        //marker4
+        setTimeout(function () { 
+        var marker4 = new google.maps.Marker({
+            position: { lat: -34.591549, lng: -58.629244 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersAlmuerzo.push(marker4);
+        var infowindow4 = new google.maps.InfoWindow({
+            content: contenido4,
+            maxWidth: 200
+        });
+        marker4.addListener('click', function () {
+            infowindow4.open(map, marker4);
+        });
+        }, 200);
+        //marker6
+        setTimeout(function () { 
+        var marker6 = new google.maps.Marker({
+            position: { lat: -34.603645, lng: -58.403249 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersAlmuerzo.push(marker6);
+        var infowindow2 = new google.maps.InfoWindow({
+            content: contenido2,
+            maxWidth: 200
+        });
+        marker6.addListener('click', function () {
+            infowindow2.open(map, marker6);
+        });
+        }, 300);
+        //marker8
+        setTimeout(function () { 
+        var marker8 = new google.maps.Marker({
+            position: { lat: -34.600711, lng: -58.457665 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersAlmuerzo.push(marker8);
+        var infowindow4 = new google.maps.InfoWindow({
+            content: contenido4,
+            maxWidth: 200
+        });
+        marker8.addListener('click', function () {
+            infowindow4.open(map, marker8);
+        });
+        }, 400);
+    }
+    function limpiarAlmuerzo(map) {
+        for (var i = 0; i < markersAlmuerzo.length; i++) {
+            markersAlmuerzo[i].setMap(map);
+        }
+    } 
 
 
-
-
-
-              ////marker1
-              //var marker1 = new google.maps.Marker({
-              //    position: { lat: -34.596962, lng: -58.588046 },
-              //    animation: google.maps.Animation.DROP,
-              //    map: map
-              //});
-              //markers.push(marker1);
-              //var infowindow1 = new google.maps.InfoWindow({
-              //    content: contentString1,
-              //    maxWidth: 200
-              //});
-              //marker1.addListener('click', function () {
-              //    infowindow1.open(map, marker1);
-              //});
-              ////marker2
-              //var marker2 = new google.maps.Marker({
-              //    position: { lat: -34.602353, lng: -58.556285 },
-              //    animation: google.maps.Animation.DROP,
-              //    map: map
-              //});
-              //markers.push(marker2);
-              //var infowindow2 = new google.maps.InfoWindow({
-              //    content: contentString2,
-              //    maxWidth: 200
-              //});
-              //marker2.addListener('click', function () {
-              //    infowindow2.open(map, marker2);
-              //});
-              ////marker3
-              //var marker3 = new google.maps.Marker({
-              //    position: { lat: -34.623714, lng: -58.592216 },
-              //    animation: google.maps.Animation.DROP,
-              //    map: map
-              //});
-              //markers.push(marker3);
-              //var infowindow3 = new google.maps.InfoWindow({
-              //    content: contentString3,
-              //    maxWidth: 200
-              //});
-              //marker3.addListener('click', function () {
-              //    infowindow3.open(map, marker3);
-              //});
-              ////marker4
-              //var marker4 = new google.maps.Marker({
-              //    position: { lat: -34.591549, lng: -58.629244 },
-              //    animation: google.maps.Animation.DROP,
-              //    map: map
-              //});
-              //markers.push(marker4);
-              //var infowindow4 = new google.maps.InfoWindow({
-              //    content: contentString4,
-              //    maxWidth: 200
-              //});
-              //marker4.addListener('click', function () {
-              //    infowindow4.open(map, marker4);
-              //});
-              ////marker5
-              //var marker5 = new google.maps.Marker({
-              //    position: { lat: -34.578237, lng: -58.405227 },
-              //    animation: google.maps.Animation.DROP,
-              //    map: map
-              //});
-              //markers.push(marker5);
-              //var infowindow1 = new google.maps.InfoWindow({
-              //    content: contentString1,
-              //    maxWidth: 200
-              //});
-              //marker5.addListener('click', function () {
-              //    infowindow1.open(map, marker5);
-              //});
-              ////marker6
-              //var marker6 = new google.maps.Marker({
-              //    position: { lat: -34.603645, lng: -58.403249 },
-              //    animation: google.maps.Animation.DROP,
-              //    map: map
-              //});
-              //markers.push(marker6);
-              //var infowindow2 = new google.maps.InfoWindow({
-              //    content: contentString2,
-              //    maxWidth: 200
-              //});
-              //marker6.addListener('click', function () {
-              //    infowindow2.open(map, marker6);
-              //});
-              ////marker7
-              //var marker7 = new google.maps.Marker({
-              //    position: { lat: -34.615061, lng: -58.426645 },
-              //    animation: google.maps.Animation.DROP,
-              //    map: map
-              //});
-              //markers.push(marker7);
-              //var infowindow3 = new google.maps.InfoWindow({
-              //    content: contentString3,
-              //    maxWidth: 200
-              //});
-              //marker7.addListener('click', function () {
-              //    infowindow3.open(map, marker7);
-              //});
-              ////marker8
-              //var marker8 = new google.maps.Marker({
-              //    position: { lat: -34.600711, lng: -58.457665 },
-              //    animation: google.maps.Animation.DROP,
-              //    map: map
-              //});
-              //markers.push(marker8);
-              //var infowindow4 = new google.maps.InfoWindow({
-              //    content: contentString4,
-              //    maxWidth: 200
-              //});
-              //marker8.addListener('click', function () {
-              //    infowindow4.open(map, marker8);
-              //});
-
-
+    function drop() {                   
               // clearMarkers();
               //  comercios();
               //for (var i = 0; i < neighborhoods.length; i++) {
               //    addMarkerWithTimeout(neighborhoods[i], i * 200);
-              //}
-
-
-              //var marker2 = new google.maps.Marker({
-              //    position: { lat: -34.580127, lng: -58.424410 },
-
-              //    animation: google.maps.Animation.DROP,
-              //    map: map
-
-              //});
-
-              //marker2.addListener('click', toggleBounce2);
-              //function toggleBounce2() {
-              //    if (marker2.getAnimation() !== null) {
-              //        marker2.setAnimation(null);
-              //    }
-              //    else {
-              //        marker2.setAnimation(google.maps.Animation.BOUNCE);
-              //    }
-              //}
+              //}      
     }
-
 
     function setMapOnAll(map) {
         for (var i = 0; i < markers.length; i++) {
@@ -596,11 +446,11 @@ var neighborhoods = [
     function limpiar() {
         setMapOnAll(null);
     }
-
+   
 
         function addMarkerWithTimeout(position, timeout) {
             window.setTimeout(function () {
-                markers.push(new google.maps.Marker({
+                markersDesayuno.push(new google.maps.Marker({
                     position: position,
                     map: map,
                     animation: google.maps.Animation.DROP
@@ -614,9 +464,6 @@ var neighborhoods = [
             }
             markers = [];
         }
-
-
-
 
     function comercios() {
                    @{
@@ -649,10 +496,6 @@ var neighborhoods = [
                        }
                    }
             @(ss)
-
-
-
-
     }
 
 
@@ -666,6 +509,10 @@ var neighborhoods = [
 
     <div id="map"></div>
 
+  
+
+
+
 
 
 
@@ -678,38 +525,45 @@ var neighborhoods = [
 
             <a id="a" href=""><li id="li">COMIDA</li></a>
             <form>
-                <input type="radio" name="gender" value="male" checked> Desayuno<br>
-                <input type="radio" name="gender" value="female"> Almuerzo<br>
-                <input type="radio" name="gender" value="other"> Merienda<br>
-                <input type="radio" name="gender" value="female"> Cena
+                <input type="checkbox" name="desayuno" id="desayuno"
+                       onClick="if(this.checked == true){dropDesayuno()} else{limpiarDesayuno()}">
+                <label id="boton" for="desayuno">Desayuno/ Merienda</label>  <br> <br>
+
+                <input type="checkbox" name="almuerzo" id="almuerzo"
+                       onClick="if(this.checked == true){dropAlmuerzo()} else{limpiarAlmuerzo()}">
+                <label id="boton" for="almuerzo">almuerzo/ Cena</label>   <br><br>
+
+              
+               
+               
             </form>
 
             <a id="a" href=""><li id="li">COMERCIO</li></a>
             <form>
-                <input type="radio" name="gender" value="male" checked> Todos<br>
+                <input type="radio" name="gender" value="male"> Todos<br>
                 <input type="radio" name="gender" value="female"> Vegano <br>
                 <input type="radio" name="gender" value="other"> Celíaco
             </form>
 
             <a id="a" href=""><li id="li">PRECIO</li></a>
             <form>
-                <input type="radio" name="gender" value="male" checked> -$200<br>
+                <input type="radio" name="gender" value="male"> -$200<br>
                 <input type="radio" name="gender" value="female"> hasta $600<br>
                 <input type="radio" name="gender" value="other"> +600
             </form>
 
-            <br>
+
+
+            @*<br>
             <div id="floating-panel">
                 <label id="boton" onclick="drop()">Aplicar</label>
             </div>
-            
-            <br> <br> <br>
-            
+            <br> <br> <br>                    
             <div id="floating-panel">
                 <label id="boton" onclick="limpiar()">Limpiar</label>
-            </div>
+            </div>*@
 
-         
+
 
 
         </ul>
