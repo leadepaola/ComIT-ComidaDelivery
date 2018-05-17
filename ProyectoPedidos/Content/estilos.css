@@ -387,13 +387,13 @@ img#logo {
     background-clip: padding-box;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     position: absolute;
-    top: -557px;
+    top: -757px;
     left: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: top 0.9s;
-    opacity: .8;
+    opacity: .85;
 }
 
 .checkbox-lateral5:checked ~ .left-panel-lateral5 {
@@ -403,3 +403,71 @@ img#logo {
 .checkbox-lateral5 {
     display: none;
 }
+
+
+#desayuno5:checked ~ #a1 {
+    box-shadow: rgba(0, 0, 0, 10.3) 0px 1px 4px -1px;
+    background-color: #BF5252;
+}
+
+#almuerzo5:checked ~ #a2 {
+    box-shadow: rgba(0, 0, 0, 10.3) 0px 1px 4px -1px;
+    background-color: #CDCDCD;
+}
+
+#vegano5:checked ~ #a3 {
+    box-shadow: rgba(0, 0, 0, 10.3) 0px 1px 4px -1px;
+    background-color: #BF5252;
+}
+
+#celiaco5:checked ~ #a4 {
+    box-shadow: rgba(0, 0, 0, 10.3) 0px 1px 4px -1px;
+    background-color: #CDCDCD;
+}
+
+.boton5 {
+    direction: ltr;
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+    user-select: none;
+    font-size: 11px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 1px;
+    background-clip: padding-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    min-width: 22px;
+    font-weight: 500;
+    opacity: 1;
+    width: 130px;
+    -webkit-transition: background-color .9s, box-shadow .5s;
+}
+
+    .boton5:hover {
+        box-shadow: rgba(0, 0, 0, 10.3) 0px 1px 4px -1px;
+        background-color: #D7D7D7;
+    }
+
+
+.boton9 {
+    direction: ltr;
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+    user-select: none;
+    font-size: 11px;
+    background-color: #E5B52D;
+    padding: 8px;
+    border-radius: 1px;
+    background-clip: padding-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    min-width: 22px;
+    font-weight: 500;
+    opacity: 1;
+    width: 130px;
+    transition: left 1.1s;
+}
+
+    .boton9:hover {
+        box-shadow: rgba(0, 0, 0, 10.3) 0px 1px 4px -1px;
+        background-color: #F9BD12;
+    }
