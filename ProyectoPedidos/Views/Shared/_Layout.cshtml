@@ -930,22 +930,38 @@ var neighborhoods = [
             <form>
                 <input type="checkbox" name="desayuno" class="checkbox-lateral" id="desayuno"
                        onClick="if(this.checked == true){dropDesayuno()} else{limpiarDesayuno()}">
-                <label id="boton" for="desayuno">Desayuno/ Merienda</label>  <br> <br><br>
+                <label class="boton" id="b1" for="desayuno">
+                    <div id="texto"> 
+                        Desayuno / Merienda
+                    </div>
+                    </label>  <br> <br><br>
 
 
                 <input type="checkbox" name="almuerzo" class="checkbox-lateral" id="almuerzo"
                        onClick="if(this.checked == true){dropAlmuerzo()} else{limpiarAlmuerzo()}">
-                <label id="boton" for="almuerzo">Almuerzo/ Cena</label>   <br><br><br>
+                <label class="boton" id="b2" for="almuerzo">
+                    <div id="texto">
+                        Almuerzo / Cena
+                    </div>
+                </label>   <br><br><br>
 
 
                 <input type="checkbox" name="vegano" class="checkbox-lateral" id="vegano"
                        onClick="if(this.checked == true){dropVegano()} else{limpiarVegano()}">
-                <label id="boton" for="vegano">Comida vegana</label>   <br><br><br> 
+                <label class="boton" id="b3" for="vegano">
+                 <div id="texto"> 
+                Comida vegana
+                 </div>
+                    </label>   <br><br><br> 
 
 
                 <input type="checkbox" name="vegano" class="checkbox-lateral" id="celiaco"
                        onClick="if(this.checked == true){dropCeliaco()} else{limpiarCeliaco()}">
-                <label id="boton" for="celiaco">Para Celiacos</label>   <br><br>
+                <label class="boton" id="b4" for="celiaco">
+                 <div id="texto"> 
+                Para Celiacos
+                 </div>
+                     </label>   <br><br>
 
             </form>
 
@@ -984,7 +1000,7 @@ var neighborhoods = [
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Inicio", "index", "Home")</li>
                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
                 </ul>
