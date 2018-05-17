@@ -245,9 +245,9 @@ var neighborhoods = [
         var contenido2 = '<div id="content">' +
             '<div id="siteNotice">' +
             '</div>' +
-            '<h4><b>Pizza Garden</b></h4>' +
+            '<h4><b>Kentucky</b></h4>' +
             '<div id="bodyContent">' +      
-            '<p>Sitio web: <a href="http://www.pizzagarden.com">' +
+            '<p>Sitio web: <a href="http://www.pizzeriaskentucky.com/">' +
             'ingresar</a> ' +
             '</p>' +
             '</div>' +
@@ -258,6 +258,46 @@ var neighborhoods = [
             '<h4><b>McDonalds</b></h4>' +
             '<div id="bodyContent">' +
             '<p>Sitio web: <a href="http://www.mcdonalds.com.ar/">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
+        var subway = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>Subway</b></h4>' +
+            '<div id="bodyContent">' +
+            '<p>Sitio web: <a href="https://subwayargentina.com/">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
+        var antares = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>Antares</b></h4>' +
+            '<div id="bodyContent">' +
+            '<p>Sitio web: <a href="http://www.cervezaantares.com/">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
+        var sushi = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>SushiClub</b></h4>' +
+            '<div id="bodyContent">' +
+            '<p>Sitio web: <a href="https://sushiclub.com.ar/">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
+        var taco = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>Taco Box</b></h4>' +
+            '<div id="bodyContent">' +
+            '<p>Sitio web: <a href="http://www.tacobox.com.ar/">' +
             'ingresar</a> ' +
             '</p>' +
             '</div>' +
@@ -280,7 +320,7 @@ var neighborhoods = [
         marker1.addListener('click', function () {
             infowindow1.open(map, marker1);
         });
-        }, 50);
+        }, 100);
         //marker5 - medialunas del abuelo - south caba
         setTimeout(function () {
             var marker5 = new google.maps.Marker({
@@ -312,7 +352,7 @@ var neighborhoods = [
         marker3.addListener('click', function () {
             infowindow3.open(map, marker3);
         });
-        }, 350);
+        }, 300);
         //marker7
         setTimeout(function () {
         var marker7 = new google.maps.Marker({
@@ -328,7 +368,7 @@ var neighborhoods = [
         marker7.addListener('click', function () {
             infowindow3.open(map, marker7);
         });
-        }, 500);
+        }, 400);
         //marker9 - BONAFIDE - colegiales
         setTimeout(function () {
         var marker9 = new google.maps.Marker({
@@ -344,7 +384,7 @@ var neighborhoods = [
         marker9.addListener('click', function () {
             infowindow9.open(map, marker9);
         });
-        }, 650);
+        }, 500);
         //marker10 - STARBUCKS - villa crespo
         setTimeout(function () {
         var marker9 = new google.maps.Marker({
@@ -360,7 +400,7 @@ var neighborhoods = [
         marker9.addListener('click', function () {
             infowindow9.open(map, marker9);
         });
-        }, 800);
+        }, 600);
         //marker11 - cafe martinez - caba 1
         setTimeout(function () {
         var marker9 = new google.maps.Marker({
@@ -376,7 +416,7 @@ var neighborhoods = [
         marker9.addListener('click', function () {
             infowindow9.open(map, marker9);
         });
-        }, 950);
+        }, 700);
         //marker11 - havana - caba 9
         setTimeout(function () {
         var marker9 = new google.maps.Marker({
@@ -392,7 +432,7 @@ var neighborhoods = [
         marker9.addListener('click', function () {
             infowindow9.open(map, marker9);
         });
-        }, 1100);
+        }, 800);
         //marker12 - havana - caba 2 
         setTimeout(function () {
         var marker9 = new google.maps.Marker({
@@ -408,7 +448,7 @@ var neighborhoods = [
         marker9.addListener('click', function () {
             infowindow9.open(map, marker9);
         });
-        }, 1250);
+        }, 900);
         //marker11 - cafe martinez - parque sarmiento
         setTimeout(function () {
         var marker9 = new google.maps.Marker({
@@ -424,7 +464,7 @@ var neighborhoods = [
         marker9.addListener('click', function () {
             infowindow9.open(map, marker9);
         });
-        }, 1400);
+        }, 1000);
         //marker13 - Bonafide - puerto madero
         setTimeout(function () {
         var marker9 = new google.maps.Marker({
@@ -440,7 +480,7 @@ var neighborhoods = [
         marker9.addListener('click', function () {
             infowindow9.open(map, marker9);
         });
-        }, 1550);
+        }, 1100);
         //marker11 - starbucks - parque chas
         setTimeout(function () {
             var marker9 = new google.maps.Marker({
@@ -456,7 +496,7 @@ var neighborhoods = [
             marker9.addListener('click', function () {
                 infowindow9.open(map, marker9);
             });
-        }, 1700);
+        }, 1200);
     }
     function limpiarDesayuno(map) {
         for (var i = 0; i < markersDesayuno.length; i++) {
@@ -466,10 +506,10 @@ var neighborhoods = [
 
     var markersAlmuerzo = [];
     function dropAlmuerzo(){
-        //marker2
+        //KENTUJY     FLORESTA
         setTimeout(function () { 
         var marker2 = new google.maps.Marker({
-            position: { lat: -34.602353, lng: -58.556285 },
+            position: { lat: -34.626115, lng: -58.489543 },
             animation: google.maps.Animation.DROP,
             map: map
         });
@@ -482,10 +522,10 @@ var neighborhoods = [
             infowindow2.open(map, marker2);
         });
         }, 100);
-        //marker4
+        //MCDONALS   GRAL PAZ
         setTimeout(function () { 
         var marker4 = new google.maps.Marker({
-            position: { lat: -34.591549, lng: -58.629244 },
+            position: { lat: -34.577041, lng: -58.505836 },
             animation: google.maps.Animation.DROP,
             map: map
         });
@@ -498,7 +538,7 @@ var neighborhoods = [
             infowindow4.open(map, marker4);
         });
         }, 200);
-        //marker6
+        // KENTUKY ABASTO
         setTimeout(function () { 
         var marker6 = new google.maps.Marker({
             position: { lat: -34.603645, lng: -58.403249 },
@@ -514,7 +554,7 @@ var neighborhoods = [
             infowindow2.open(map, marker6);
         });
         }, 300);
-        //marker8
+        // MACDONALS    VILLA CRESCO
         setTimeout(function () { 
         var marker8 = new google.maps.Marker({
             position: { lat: -34.600711, lng: -58.457665 },
@@ -530,6 +570,134 @@ var neighborhoods = [
             infowindow4.open(map, marker8);
         });
         }, 400);
+        // SUBWAY       VILLA URQUIZA
+        setTimeout(function () {
+            var marker8 = new google.maps.Marker({
+                position: { lat: -34.571012, lng: -58.469752 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersAlmuerzo.push(marker8);
+            var infowindow4 = new google.maps.InfoWindow({
+                content: subway,
+                maxWidth: 200
+            });
+            marker8.addListener('click', function () {
+                infowindow4.open(map, marker8);
+            });
+        }, 500);
+        // SUBWAY       MONSERRAT
+        setTimeout(function () {
+            var marker8 = new google.maps.Marker({
+                position: { lat: -34.614001, lng: -58.393661 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersAlmuerzo.push(marker8);
+            var infowindow4 = new google.maps.InfoWindow({
+                content: subway,
+                maxWidth: 200
+            });
+            marker8.addListener('click', function () {
+                infowindow4.open(map, marker8);
+            });
+        }, 600);
+        // ANTARES      PALERMO
+        setTimeout(function () {
+            var marker8 = new google.maps.Marker({
+                position: { lat: -34.573372, lng: -58.429389 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersAlmuerzo.push(marker8);
+            var infowindow4 = new google.maps.InfoWindow({
+                content: antares,
+                maxWidth: 200
+            });
+            marker8.addListener('click', function () {
+                infowindow4.open(map, marker8);
+            });
+        }, 700);
+        // ANTARES      OBELISCO
+        setTimeout(function () {
+            var marker8 = new google.maps.Marker({
+                position: { lat: -34.605701, lng: -58.380215 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersAlmuerzo.push(marker8);
+            var infowindow4 = new google.maps.InfoWindow({
+                content: antares,
+                maxWidth: 200
+            });
+            marker8.addListener('click', function () {
+                infowindow4.open(map, marker8);
+            });
+        }, 800);
+        // SUSHICLUB        PUERTO MADERO    
+        setTimeout(function () {
+            var marker8 = new google.maps.Marker({
+                position: { lat: -34.601985, lng: -58.367074 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersAlmuerzo.push(marker8);
+            var infowindow4 = new google.maps.InfoWindow({
+                content: sushi,
+                maxWidth: 200
+            });
+            marker8.addListener('click', function () {
+                infowindow4.open(map, marker8);
+            });
+        }, 900);
+        // SUSHICLUB      DEVOTO  
+        setTimeout(function () {
+            var marker8 = new google.maps.Marker({
+                position: { lat: -34.611609, lng: -58.517385 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersAlmuerzo.push(marker8);
+            var infowindow4 = new google.maps.InfoWindow({
+                content: sushi,
+                maxWidth: 200
+            });
+            marker8.addListener('click', function () {
+                infowindow4.open(map, marker8);
+            });
+        }, 1000);
+        // TACOBOX          BELGRANO          
+        setTimeout(function () {
+            var marker8 = new google.maps.Marker({
+                position: { lat: -34.564560, lng: -58.449475 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersAlmuerzo.push(marker8);
+            var infowindow4 = new google.maps.InfoWindow({
+                content: taco,
+                maxWidth: 200
+            });
+            marker8.addListener('click', function () {
+                infowindow4.open(map, marker8);
+            });
+        }, 1100);
+        // TACOBOX              
+        setTimeout(function () {
+            var marker8 = new google.maps.Marker({
+                position: { lat: -34.618390, lng: -58.441275 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersAlmuerzo.push(marker8);
+            var infowindow4 = new google.maps.InfoWindow({
+                content: taco,
+                maxWidth: 200
+            });
+            marker8.addListener('click', function () {
+                infowindow4.open(map, marker8);
+            });
+        }, 1200);
     }
     function limpiarAlmuerzo(map) {
         for (var i = 0; i < markersAlmuerzo.length; i++) {
