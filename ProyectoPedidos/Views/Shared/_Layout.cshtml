@@ -302,6 +302,26 @@ var neighborhoods = [
             '</p>' +
             '</div>' +
             '</div>';
+        var curcuma = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>Cúrcuma</b></h4>' +
+            '<div id="bodyContent">' +
+            '<p>Sitio web: <a href="https://www.facebook.com/curcuma.almagro/">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
+        var celi = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h4><b>CeliGourmet</b></h4>' +
+            '<div id="bodyContent">' +
+            '<p>Sitio web: <a href="http://www.celigourmet.com.ar/">' +
+            'ingresar</a> ' +
+            '</p>' +
+            '</div>' +
+            '</div>';
 
     var markersDesayuno = [];  
     function dropDesayuno(){
@@ -687,7 +707,7 @@ var neighborhoods = [
             var marker8 = new google.maps.Marker({
                 position: { lat: -34.618390, lng: -58.441275 },
                 animation: google.maps.Animation.DROP,
-                map: map
+                map: map              
             });
             markersAlmuerzo.push(marker8);
             var infowindow4 = new google.maps.InfoWindow({
@@ -704,6 +724,121 @@ var neighborhoods = [
             markersAlmuerzo[i].setMap(map);
         }
     } 
+
+    var markersVegano = [];
+    function dropVegano(){
+        //  CÚRCUMA     ALMAGRO
+        setTimeout(function () {
+        var marker1 = new google.maps.Marker({
+            position: { lat: -34.603017, lng: -58.416450 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersVegano.push(marker1);
+        var infowindow1 = new google.maps.InfoWindow({
+            content: curcuma,
+            maxWidth: 200
+        });
+        marker1.addListener('click', function () {
+            infowindow1.open(map, marker1);
+        });
+        }, 100);
+        //  CÚRCUMA     VILLA DEL PARQUE
+        setTimeout(function () {
+            var marker1 = new google.maps.Marker({
+                position: { lat: -34.608361, lng: -58.474313 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersVegano.push(marker1);
+            var infowindow1 = new google.maps.InfoWindow({
+                content: curcuma,
+                maxWidth: 200
+            });
+            marker1.addListener('click', function () {
+                infowindow1.open(map, marker1);
+            });
+        }, 200);
+        //  CÚRCUMA     PALERMO
+        setTimeout(function () {
+            var marker1 = new google.maps.Marker({
+                position: { lat: -34.576106, lng: -58.436126 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersVegano.push(marker1);
+            var infowindow1 = new google.maps.InfoWindow({
+                content: curcuma,
+                maxWidth: 200
+            });
+            marker1.addListener('click', function () {
+                infowindow1.open(map, marker1);
+            });
+        }, 300);
+    }
+    function limpiarVegano(map) {
+        for (var i = 0; i < markersVegano.length; i++) {
+            markersVegano[i].setMap(map);
+        }
+    } 
+
+    var markersCeliaco = [];
+    function dropCeliaco(){
+        //  CELIGOURMET     PUERTO MADERO
+        setTimeout(function () {
+        var marker1 = new google.maps.Marker({
+            position: { lat: -34.600227, lng: -58.378231 },
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        markersCeliaco.push(marker1);
+        var infowindow1 = new google.maps.InfoWindow({
+            content: celi,
+            maxWidth: 200
+        });
+        marker1.addListener('click', function () {
+            infowindow1.open(map, marker1);
+        });
+        }, 100);
+        //  CELIGOURMET     PALERMO
+        setTimeout(function () {
+            var marker1 = new google.maps.Marker({
+                position: { lat: -34.587843, lng: -58.430906 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersCeliaco.push(marker1);
+            var infowindow1 = new google.maps.InfoWindow({
+                content: celi,
+                maxWidth: 200
+            });
+            marker1.addListener('click', function () {
+                infowindow1.open(map, marker1);
+            });
+        }, 200);
+        //  CELIGOURMET     CABALLITO  
+        setTimeout(function () {
+            var marker1 = new google.maps.Marker({
+                position: { lat: -34.629968, lng: -58.446781 },
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+            markersCeliaco.push(marker1);
+            var infowindow1 = new google.maps.InfoWindow({
+                content: celi,
+                maxWidth: 200
+            });
+            marker1.addListener('click', function () {
+                infowindow1.open(map, marker1);
+            });
+        }, 300);
+    }
+    function limpiarCeliaco(map) {
+        for (var i = 0; i < markersCeliaco.length; i++) {
+            markersCeliaco[i].setMap(map);
+        }
+    } 
+
 
 
     function drop() {                   
@@ -808,9 +943,15 @@ var neighborhoods = [
 
             <a id="a" href=""><li id="li">COMERCIO</li></a>
             <form>
-                <input type="radio" name="gender" value="male"> Todos<br>
-                <input type="radio" name="gender" value="female"> Vegano <br>
-                <input type="radio" name="gender" value="other"> Celíaco
+                <input type="checkbox" name="vegano" class="checkbox-lateral" id="vegano"
+                       onClick="if(this.checked == true){dropVegano()} else{limpiarVegano()}">
+                <label id="boton" for="vegano">Comida vegana</label>   <br><br>
+
+                <input type="checkbox" name="vegano" class="checkbox-lateral" id="celiaco"
+                       onClick="if(this.checked == true){dropCeliaco()} else{limpiarCeliaco()}">
+                <label id="boton" for="celiaco">Para Celiacos</label>   <br><br>
+
+                
             </form>
 
             <a id="a" href=""><li id="li">PRECIO</li></a>
