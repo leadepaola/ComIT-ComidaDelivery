@@ -171,14 +171,16 @@ html, body {
     font-family: Roboto, Arial, sans-serif;
     user-select: none;
     font-size: 11px;
-    background-color: #CD6155;
+    background-color: greenyellow;
     padding: 8px;
-    border-radius:1px;
+    border-radius:4px;
     background-clip: padding-box;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     min-width: 22px;
     font-weight: 500;
     opacity: 1;
+   
+    width: 110px;
    
 }
 #boton:hover {
