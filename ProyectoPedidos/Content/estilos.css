@@ -162,28 +162,47 @@ html, body {
         border-width: 0 0.1rem;
     }
 
-#boton {
-    z-index: 5;
+.boton {
     direction: ltr;
     text-align: center;
-    position: absolute;
-    color: #F2F3F4;
     font-family: Roboto, Arial, sans-serif;
     user-select: none;
     font-size: 11px;
-    background-color: #CD6155;
+    background-color: rgb(255, 255, 255);
     padding: 8px;
-    border-radius:1px;
+    border-radius: 1px;
     background-clip: padding-box;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     min-width: 22px;
     font-weight: 500;
     opacity: 1;
-   
+    width: 130px;
+    -webkit-transition: background-color .9s, box-shadow .5s;
 }
-#boton:hover {
-    color: #F2F3F4;
-    background-color: #A93226;
+.boton:hover {
+    box-shadow: rgba(0, 0, 0, 10.3) 0px 1px 4px -1px;
+    background-color: #D7D7D7;
+    
+}
+
+#desayuno:checked ~ #b1 {
+    box-shadow: rgba(0, 0, 0, 10.3) 0px 1px 4px -1px;
+    background-color: #BF5252;
+}
+#almuerzo:checked ~ #b2 {
+    box-shadow: rgba(0, 0, 0, 10.3) 0px 1px 4px -1px;
+    background-color: #CDCDCD;
+}
+#vegano:checked ~ #b3 {
+    box-shadow: rgba(0, 0, 0, 10.3) 0px 1px 4px -1px;
+    background-color: #BF5252;
+}
+#celiaco:checked ~ #b4 {
+    box-shadow: rgba(0, 0, 0, 10.3) 0px 1px 4px -1px;
+    background-color: #CDCDCD;
+}
+#texto {
+    line-height: 40px;
 }
     #drop:hover {
         background-color: darkblue;
@@ -260,6 +279,3 @@ img#logo {
 }
 
 
-#desayuno:checked {
-    
-}

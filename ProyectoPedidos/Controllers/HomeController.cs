@@ -38,5 +38,13 @@ namespace ProyectoPedidos.Controllers
 
             return View();
         }
+
+        public ActionResult prueba()
+        {
+            
+
+
+            return View();
+        }
     }
 }
